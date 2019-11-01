@@ -33,6 +33,13 @@ class ShioriNLP {
         this.add(path, "output", output);      
     }
 
+    guessResponse(output) {
+        let _class = this.classify(output, false);
+        let ref = this.explore(_class.getPath() + "/output"); 
+        let index = Math.floor( Math.random() * ref.length );
+        return ref[index];
+    }
+
     getMap() {
         return this.map;
     }
