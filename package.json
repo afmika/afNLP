@@ -1,0 +1,19 @@
+{
+  "name": "afnlp",
+  "version": "1.0.0",
+  "description": "A basic tool for Natural Language Processing (NLP)",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afmika/afNLP.git"
+  },
+  "author": "afmika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afmika/afNLP/issues"
+  },
+  "homepage": "https://github.com/afmika/afNLP#readme"
+}
