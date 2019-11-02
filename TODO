@@ -6,10 +6,9 @@ Tokenize
 - consider stuff in << "" >> as a single token
 - for each token split by "," or ";" => makes more subtoken
 - for each token split by space
-- compare each token with the database and categorize it
 
-foreach tokens replace _ by a space
-once it's done and If the tokens is in the
-sentence (regex test + lenvenshtein) then push
-it into an array
-
+Classification
+for each token in db compare it with
+the regex of the current word token
+if it fails use levenshtein distance
+=> labelize the word with a temporary class  
