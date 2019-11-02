@@ -1,5 +1,6 @@
 /**
  * @author afmika
+ * @contact afmichael73@gmail.com
  */
 
  let DataLoader = require("./shiori-core/nlp/DataLoader");

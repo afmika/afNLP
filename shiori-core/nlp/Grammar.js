@@ -1,3 +1,8 @@
+/**
+ * @author afmika
+ * @contact afmichael73@gmail.com
+ */
+
 module.exports = 
 class Grammar {
     constructor(rule) {

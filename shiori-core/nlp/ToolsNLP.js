@@ -1,3 +1,8 @@
+/**
+ * @author afmika
+ * @contact afmichael73@gmail.com
+ */
+
 module.exports = 
 class ToolsNLP {
     static trim(text) {

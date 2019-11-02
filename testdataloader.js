@@ -1,7 +1,7 @@
 /**
  * @author afmika
+ * @contact afmichael73@gmail.com
  */
-
 const DataLoader = require("./shiori-core/nlp/DataLoader");
 let data = new DataLoader();
 // data.path = "./shiori-core/data/shiori-data/";

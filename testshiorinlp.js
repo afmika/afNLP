@@ -1,5 +1,6 @@
 /**
  * @author afmika
+ * @contact afmichael73@gmail.com
  */
 
 const ShioriNLP = require("./shiori-core/nlp/ShioriNLP");

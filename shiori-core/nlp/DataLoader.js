@@ -1,6 +1,10 @@
+/**
+ * @author afmika
+ * @contact afmichael73@gmail.com
+ */
+
 const fs = require('fs');
 const default_path = "./shiori-core/data/shiori-data/en/";
-
 
 module.exports = class DataLoader {
     constructor(path) {

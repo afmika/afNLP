@@ -1,5 +1,6 @@
 /**
  * @author afmika
+ * @contact afmichael73@gmail.com
  */
 let ShioriNLP = require("./shiori-core/nlp/ShioriNLP");
 let Grammar = require("./shiori-core/nlp/Grammar");

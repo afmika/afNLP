@@ -1,3 +1,8 @@
+/**
+ * @author afmika
+ * @contact afmichael73@gmail.com
+ */
+
 const ToolsNLP = require("./ToolsNLP");
 const DocNLP = require("./DocNLP");
 
