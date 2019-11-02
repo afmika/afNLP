@@ -1,0 +1,75 @@
+[https://github.com/afmika 2019]
+
+Pour faire du NLP il nous faut ShioriNLP.js et Grammar.js
+
+- ShioriNLP.js
+1) Cette classe permet de gerer des mots de differents languages,
+de fabriquer des reponses, de deviner la langue d'une input
+
+2) Partie NLP
+Cette classe permet aussi de classifier chaque token d'une phrase
+en fonction d'une liste categorisee de mots. 
+(Que l'on peut charger via DataLoader.js
+ou juste ecrire de maniere brute dans le code)
+
+La fonction analyze(word_data, text).
+dont word_data est definie comme {categ: [.... words]}
+Ex: {
+    'adj': ["clever", "tall", "red", "smart", ....]
+    'pronoun' : ['I' , 'he', 'she', ...]
+    'verb' : ['be', 'am', 'are', 'want', 'go', ....]
+}
+
+text est juste l'input que l'on analyse par exemple
+si text = "I am smart" alors analyse(word_data, text)
+donnera
+{
+    "i" : "pronoun",
+    "am": "verb",
+    "adj": "clever"
+}
+
+- Grammar.js
+
+Grammar.js est une classe qui permet de formaliser une regle grammaticale 
+via les expressions regulieres et de faire des operations sur ces regles.
+Grammar.js se base sur la notion d'alias et supporte les definitions recursives
+par exemple si A refere B et que C refere A donc C referera A
+
+
+Par exemple une phrase simple peut etre formalisee via le motif
+<subject>{1}<verb>{1}<object>{1}
+En partant de la phrase "I am smart" de toute a l'heure
+En faisant l'alias "object" <=> "adj" et "subject" <=> "pronoun"
+pour tester on aura comme code
+
+/**
+ * @author afmika
+ */
+let word_data = {
+    'adj': ["clever", "tall", "red", "smart", ...],
+    'pronoun' : ['I' , 'he', 'she', ...],
+    'verb' : ['be', 'am', 'are', 'want', 'go', ....],
+    'noun' : ['michael', 'apple', ....]
+};
+
+let nlp = new ShioriNLP();
+let grammar = new Grammar();
+grammar.defineAlias({
+    "subject" : "pronoun",
+    "object" : ["adj", "noun"],
+    "V": "verb",
+
+    // test pour la definition recursive
+    "S" : "subject", // S = non seulement signifie subject mais aussi pronoun
+    "O" : "object" // O = non seulement signifie object mais aussi (adj ou noun)
+})
+
+let text = `I am smart`;
+let res = nlp.analyze(word_data, text);
+grammar.defineRule("<S>{1}<V>{1}<O>{1}");
+if(grammar.test(res)) {
+    console.log("Votre phrase suit la grammaire");
+} else {
+    console.log("Votre phrase ne suit pas la grammaire");
+}

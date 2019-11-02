@@ -58,6 +58,28 @@ class ShioriNLP {
         }
         return this.map[language][group];
     }
+    
+    analyze(word_data, text) {
+        // word_data {categ: [.... words]}
+        text = text.toLowerCase();
+        let tokens = ToolsNLP.tokenize(text);
+        let result = {};
+        for(let categ in word_data) {
+            tokens.forEach(token => {
+                for(let i = 0; i < word_data[categ].length; i++) {
+                    let sample = word_data[categ][i].toLowerCase();
+                    if(sample == token) {
+                        result[token] = categ;
+                        break;
+                    }
+                }
+                if(result[token] == undefined) {
+                    result[token] = "UNKNOWN";
+                }
+            });
+        }
+        return result;
+    }
 
     // classify the usertext in a strict manner
     getGroupOf(usertext, case_sensitive) {

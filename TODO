@@ -1,14 +1,3 @@
-make the file loader async
-some datas looks like "word1_word2..."
-
-Tokenize
-- replace [\s]+ by a single space [\s]
-- consider stuff in << "" >> as a single token
-- for each token split by "," or ";" => makes more subtoken
-- for each token split by space
-
-Classification
-for each token in db compare it with
-the regex of the current word token
-if it fails use levenshtein distance
-=> labelize the word with a temporary class  
+- Reorganize the database.
+Problem : 
+Ex: 'be' does exist but 'am' does not

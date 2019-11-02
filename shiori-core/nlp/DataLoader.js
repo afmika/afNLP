@@ -7,12 +7,8 @@ module.exports = class DataLoader {
         this.path = path || default_path;    
         this.data = {};
         this.dbfiles = {
-            "adj" : "adj",
-            "adv" : "adv",
-            "noun" : "noun",
-            "verb" : "verb",
+            // it will run faster this way
             "prepositions" : "prepositions",
-
             "pronoun.demonstrative" : "pronoun.demonstrative",
             "pronoun.indefinite" : "pronoun.indefinite",
             "pronoun.intensive" : "pronoun.intensive",
@@ -23,7 +19,12 @@ module.exports = class DataLoader {
             "pronoun.reciprocal" : "pronoun.reciprocal",
             "pronoun.reflexive" : "pronoun.reflexive",
             "pronoun.relative" : "pronoun.relative",
-            "pronoun.subjective" : "pronoun.subjective"
+            "pronoun.subjective" : "pronoun.subjective",
+
+            "adj" : "adj",
+            "adv" : "adv",
+            "noun" : "noun",
+            "verb" : "verb"
         };
     }
 
@@ -60,6 +61,13 @@ module.exports = class DataLoader {
         });
     }
 
+    getGrammarItems() {
+        let res = [];
+        for(let categ in this.dbfiles) {
+            res.push(categ);
+        }
+        return res;
+    }
     getData() {
         return this.data;    
     }
