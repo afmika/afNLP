@@ -1,0 +1,1455 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'node-nlp' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node-nlp
+8 silly fetchNamedPackageData node-nlp
+9 silly mapToRegistry name node-nlp
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/node-nlp
+13 verbose request uri https://registry.npmjs.org/node-nlp
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 08:21:07
+16 verbose request id 72da805da555b080
+17 verbose etag W/"428d68e79d074dff168e05a4da37059d"
+18 verbose lastModified Wed, 30 Oct 2019 19:56:22 GMT
+19 http request GET https://registry.npmjs.org/node-nlp
+20 http 304 https://registry.npmjs.org/node-nlp
+21 verbose headers { date: 'Sat, 02 Nov 2019 06:21:23 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'set-cookie':
+21 verbose headers    [ '__cfduid=d070ad840e47d4a65a4e66f9757b0a4ce1572675682; expires=Sun, 01-Nov-20 06:21:22 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+21 verbose headers   'cf-cache-status': 'MISS',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'cf-ray': '52f402075ddfac28-JNB',
+21 verbose headers   etag: '"428d68e79d074dff168e05a4da37059d"',
+21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 verbose headers   'last-modified': 'Wed, 30 Oct 2019 19:56:22 GMT',
+21 verbose headers   vary: 'accept-encoding, accept',
+21 verbose headers   'x-amz-meta-rev': '70-692c4411b444065b245d577d2101a519',
+21 verbose headers   server: 'cloudflare' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Sat, 02 Nov 2019 06:21:23 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'set-cookie':
+22 silly get      [ '__cfduid=d070ad840e47d4a65a4e66f9757b0a4ce1572675682; expires=Sun, 01-Nov-20 06:21:22 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+22 silly get     'cf-cache-status': 'MISS',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'cf-ray': '52f402075ddfac28-JNB',
+22 silly get     etag: '"428d68e79d074dff168e05a4da37059d"',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     'last-modified': 'Wed, 30 Oct 2019 19:56:22 GMT',
+22 silly get     vary: 'accept-encoding, accept',
+22 silly get     'x-amz-meta-rev': '70-692c4411b444065b245d577d2101a519',
+22 silly get     server: 'cloudflare' } ]
+23 verbose etag https://registry.npmjs.org/node-nlp from cache
+24 verbose get saving node-nlp to /home/afmika/.npm/registry.npmjs.org/node-nlp/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule node-nlp@3.10.2 checking installable status
+38 silly cache add args [ 'node-nlp', null ]
+39 verbose cache add spec node-nlp
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'node-nlp',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'node-nlp',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed node-nlp@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for node-nlp
+43 info addNameTag [ 'node-nlp', 'latest' ]
+44 silly mapToRegistry name node-nlp
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/node-nlp
+48 verbose addNameTag registry:https://registry.npmjs.org/node-nlp not in flight; fetching
+49 verbose get https://registry.npmjs.org/node-nlp not expired, no request
+50 silly addNameTag next cb for node-nlp with tag latest
+51 silly addNamed node-nlp@3.10.2
+52 verbose addNamed "3.10.2" is a plain semver version for node-nlp
+53 silly cache afterAdd node-nlp@3.10.2
+54 verbose afterAdd /home/afmika/.npm/node-nlp/3.10.2/package/package.json not in flight; writing
+55 verbose afterAdd /home/afmika/.npm/node-nlp/3.10.2/package/package.json written
+56 silly fetchNamedPackageData @microsoft/recognizers-text-suite
+57 silly mapToRegistry name @microsoft/recognizers-text-suite
+58 silly mapToRegistry scope (from package name) @microsoft
+59 verbose mapToRegistry no registry URL found in name for scope @microsoft
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-suite
+63 silly fetchNamedPackageData escodegen
+64 silly mapToRegistry name escodegen
+65 silly mapToRegistry using default registry
+66 silly mapToRegistry registry https://registry.npmjs.org/
+67 silly mapToRegistry uri https://registry.npmjs.org/escodegen
+68 silly fetchNamedPackageData esprima
+69 silly mapToRegistry name esprima
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry uri https://registry.npmjs.org/esprima
+73 silly fetchNamedPackageData kuromoji
+74 silly mapToRegistry name kuromoji
+75 silly mapToRegistry using default registry
+76 silly mapToRegistry registry https://registry.npmjs.org/
+77 silly mapToRegistry uri https://registry.npmjs.org/kuromoji
+78 silly fetchNamedPackageData novel-segment
+79 silly mapToRegistry name novel-segment
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry uri https://registry.npmjs.org/novel-segment
+83 silly fetchNamedPackageData xlsx
+84 silly mapToRegistry name xlsx
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry uri https://registry.npmjs.org/xlsx
+88 verbose request uri https://registry.npmjs.org/@microsoft%2frecognizers-text-suite
+89 verbose request no auth needed
+90 info attempt registry request try #1 at 08:21:10
+91 http request GET https://registry.npmjs.org/@microsoft%2frecognizers-text-suite
+92 verbose request uri https://registry.npmjs.org/kuromoji
+93 verbose request no auth needed
+94 info attempt registry request try #1 at 08:21:10
+95 verbose etag W/"c24d248ad8137d9ba2e9361016d519f1"
+96 verbose lastModified Sun, 27 May 2018 06:21:14 GMT
+97 http request GET https://registry.npmjs.org/kuromoji
+98 verbose request uri https://registry.npmjs.org/esprima
+99 verbose request no auth needed
+100 info attempt registry request try #1 at 08:21:10
+101 verbose etag W/"1408d15684aa02561523c247813d3acf"
+102 verbose lastModified Sun, 29 Sep 2019 09:56:40 GMT
+103 http request GET https://registry.npmjs.org/esprima
+104 verbose request uri https://registry.npmjs.org/escodegen
+105 verbose request no auth needed
+106 info attempt registry request try #1 at 08:21:10
+107 verbose etag W/"2ea02d64be09abbcbd83423632e87d4d"
+108 verbose lastModified Tue, 13 Aug 2019 02:10:00 GMT
+109 http request GET https://registry.npmjs.org/escodegen
+110 verbose request uri https://registry.npmjs.org/xlsx
+111 verbose request no auth needed
+112 info attempt registry request try #1 at 08:21:10
+113 verbose etag W/"804f67c5875a59babd92f74e7ab512c7"
+114 verbose lastModified Sat, 21 Sep 2019 18:42:26 GMT
+115 http request GET https://registry.npmjs.org/xlsx
+116 verbose request uri https://registry.npmjs.org/novel-segment
+117 verbose request no auth needed
+118 info attempt registry request try #1 at 08:21:10
+119 verbose etag W/"16070f64e6d4f917016e734107812156"
+120 verbose lastModified Fri, 06 Sep 2019 22:17:06 GMT
+121 http request GET https://registry.npmjs.org/novel-segment
+122 http 304 https://registry.npmjs.org/xlsx
+123 verbose headers { date: 'Sat, 02 Nov 2019 06:21:25 GMT',
+123 verbose headers   connection: 'keep-alive',
+123 verbose headers   'set-cookie':
+123 verbose headers    [ '__cfduid=da93f6032a33c2ba124f67707272e46a41572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+123 verbose headers   'cf-cache-status': 'REVALIDATED',
+123 verbose headers   'cache-control': 'max-age=300',
+123 verbose headers   'cf-ray': '52f4021498e5ac5e-JNB',
+123 verbose headers   etag: '"804f67c5875a59babd92f74e7ab512c7"',
+123 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+123 verbose headers   'last-modified': 'Sat, 21 Sep 2019 18:42:26 GMT',
+123 verbose headers   vary: 'accept-encoding, accept',
+123 verbose headers   'x-amz-meta-rev': '476-9f032160308bf3118e0462b407207038',
+123 verbose headers   server: 'cloudflare' }
+124 silly get cb [ 304,
+124 silly get   { date: 'Sat, 02 Nov 2019 06:21:25 GMT',
+124 silly get     connection: 'keep-alive',
+124 silly get     'set-cookie':
+124 silly get      [ '__cfduid=da93f6032a33c2ba124f67707272e46a41572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+124 silly get     'cf-cache-status': 'REVALIDATED',
+124 silly get     'cache-control': 'max-age=300',
+124 silly get     'cf-ray': '52f4021498e5ac5e-JNB',
+124 silly get     etag: '"804f67c5875a59babd92f74e7ab512c7"',
+124 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+124 silly get     'last-modified': 'Sat, 21 Sep 2019 18:42:26 GMT',
+124 silly get     vary: 'accept-encoding, accept',
+124 silly get     'x-amz-meta-rev': '476-9f032160308bf3118e0462b407207038',
+124 silly get     server: 'cloudflare' } ]
+125 verbose etag https://registry.npmjs.org/xlsx from cache
+126 verbose get saving xlsx to /home/afmika/.npm/registry.npmjs.org/xlsx/.cache.json
+127 http 304 https://registry.npmjs.org/esprima
+128 verbose headers { date: 'Sat, 02 Nov 2019 06:21:25 GMT',
+128 verbose headers   connection: 'keep-alive',
+128 verbose headers   'set-cookie':
+128 verbose headers    [ '__cfduid=d4c23b29931bd663694fe7fcbc4c6272a1572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+128 verbose headers   'cf-cache-status': 'REVALIDATED',
+128 verbose headers   'cache-control': 'max-age=300',
+128 verbose headers   'cf-ray': '52f402149edbac2e-JNB',
+128 verbose headers   etag: '"1408d15684aa02561523c247813d3acf"',
+128 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+128 verbose headers   'last-modified': 'Sun, 29 Sep 2019 09:56:40 GMT',
+128 verbose headers   vary: 'accept-encoding, accept',
+128 verbose headers   'x-amz-meta-rev': '174-d8b3238dbfc423d67528264991def208',
+128 verbose headers   server: 'cloudflare' }
+129 silly get cb [ 304,
+129 silly get   { date: 'Sat, 02 Nov 2019 06:21:25 GMT',
+129 silly get     connection: 'keep-alive',
+129 silly get     'set-cookie':
+129 silly get      [ '__cfduid=d4c23b29931bd663694fe7fcbc4c6272a1572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+129 silly get     'cf-cache-status': 'REVALIDATED',
+129 silly get     'cache-control': 'max-age=300',
+129 silly get     'cf-ray': '52f402149edbac2e-JNB',
+129 silly get     etag: '"1408d15684aa02561523c247813d3acf"',
+129 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+129 silly get     'last-modified': 'Sun, 29 Sep 2019 09:56:40 GMT',
+129 silly get     vary: 'accept-encoding, accept',
+129 silly get     'x-amz-meta-rev': '174-d8b3238dbfc423d67528264991def208',
+129 silly get     server: 'cloudflare' } ]
+130 verbose etag https://registry.npmjs.org/esprima from cache
+131 verbose get saving esprima to /home/afmika/.npm/registry.npmjs.org/esprima/.cache.json
+132 silly resolveWithNewModule xlsx@0.15.1 checking installable status
+133 silly cache add args [ 'xlsx@^0.15.1', null ]
+134 verbose cache add spec xlsx@^0.15.1
+135 silly cache add parsed spec Result {
+135 silly cache add   raw: 'xlsx@^0.15.1',
+135 silly cache add   scope: null,
+135 silly cache add   name: 'xlsx',
+135 silly cache add   rawSpec: '^0.15.1',
+135 silly cache add   spec: '>=0.15.1 <0.16.0',
+135 silly cache add   type: 'range' }
+136 silly addNamed xlsx@>=0.15.1 <0.16.0
+137 verbose addNamed ">=0.15.1 <0.16.0" is a valid semver range for xlsx
+138 silly addNameRange { name: 'xlsx', range: '>=0.15.1 <0.16.0', hasData: false }
+139 silly mapToRegistry name xlsx
+140 silly mapToRegistry using default registry
+141 silly mapToRegistry registry https://registry.npmjs.org/
+142 silly mapToRegistry uri https://registry.npmjs.org/xlsx
+143 verbose addNameRange registry:https://registry.npmjs.org/xlsx not in flight; fetching
+144 verbose get https://registry.npmjs.org/xlsx not expired, no request
+145 silly addNameRange number 2 { name: 'xlsx', range: '>=0.15.1 <0.16.0', hasData: true }
+146 silly addNameRange versions [ 'xlsx',
+146 silly addNameRange   [ '0.3.3',
+146 silly addNameRange     '0.3.10',
+146 silly addNameRange     '0.4.3',
+146 silly addNameRange     '0.5.0',
+146 silly addNameRange     '0.5.6',
+146 silly addNameRange     '0.5.7',
+146 silly addNameRange     '0.5.8',
+146 silly addNameRange     '0.5.17',
+146 silly addNameRange     '0.6.0',
+146 silly addNameRange     '0.6.1',
+146 silly addNameRange     '0.7.0',
+146 silly addNameRange     '0.7.12',
+146 silly addNameRange     '0.8.0',
+146 silly addNameRange     '0.8.8',
+146 silly addNameRange     '0.9.0',
+146 silly addNameRange     '0.9.2',
+146 silly addNameRange     '0.9.3',
+146 silly addNameRange     '0.9.4',
+146 silly addNameRange     '0.9.6',
+146 silly addNameRange     '0.9.8',
+146 silly addNameRange     '0.9.9',
+146 silly addNameRange     '0.9.10',
+146 silly addNameRange     '0.9.11',
+146 silly addNameRange     '0.9.12',
+146 silly addNameRange     '0.9.13',
+146 silly addNameRange     '0.10.0',
+146 silly addNameRange     '0.10.1',
+146 silly addNameRange     '0.10.3',
+146 silly addNameRange     '0.10.5',
+146 silly addNameRange     '0.10.6',
+146 silly addNameRange     '0.10.7',
+146 silly addNameRange     '0.10.8',
+146 silly addNameRange     '0.10.9',
+146 silly addNameRange     '0.11.0',
+146 silly addNameRange     '0.11.1',
+146 silly addNameRange     '0.11.2',
+146 silly addNameRange     '0.11.3',
+146 silly addNameRange     '0.11.4',
+146 silly addNameRange     '0.11.5',
+146 silly addNameRange     '0.11.6',
+146 silly addNameRange     '0.11.7',
+146 silly addNameRange     '0.11.8',
+146 silly addNameRange     '0.11.9',
+146 silly addNameRange     '0.11.10',
+146 silly addNameRange     '0.11.11',
+146 silly addNameRange     '0.11.12',
+146 silly addNameRange     '0.11.13',
+146 silly addNameRange     '0.11.14',
+146 silly addNameRange     '0.11.15',
+146 silly addNameRange     '0.11.16',
+146 silly addNameRange     '0.11.17',
+146 silly addNameRange     '0.11.18',
+146 silly addNameRange     '0.11.19',
+146 silly addNameRange     '0.12.0',
+146 silly addNameRange     '0.12.1',
+146 silly addNameRange     '0.12.2',
+146 silly addNameRange     '0.12.3',
+146 silly addNameRange     '0.12.4',
+146 silly addNameRange     '0.12.5',
+146 silly addNameRange     '0.12.6',
+146 silly addNameRange     '0.12.7',
+146 silly addNameRange     '0.12.8',
+146 silly addNameRange     '0.12.9',
+146 silly addNameRange     '0.12.10',
+146 silly addNameRange     '0.12.11',
+146 silly addNameRange     '0.12.12',
+146 silly addNameRange     '0.12.13',
+146 silly addNameRange     '0.13.0',
+146 silly addNameRange     '0.13.1',
+146 silly addNameRange     '0.13.2',
+146 silly addNameRange     '0.13.3',
+146 silly addNameRange     '0.13.4',
+146 silly addNameRange     '0.13.5',
+146 silly addNameRange     '0.14.0',
+146 silly addNameRange     '0.14.1',
+146 silly addNameRange     '0.14.2',
+146 silly addNameRange     '0.14.3',
+146 silly addNameRange     '0.14.4',
+146 silly addNameRange     '0.14.5',
+146 silly addNameRange     '0.15.0',
+146 silly addNameRange     '0.15.1' ] ]
+147 silly addNamed xlsx@0.15.1
+148 verbose addNamed "0.15.1" is a plain semver version for xlsx
+149 http 304 https://registry.npmjs.org/kuromoji
+150 verbose headers { date: 'Sat, 02 Nov 2019 06:21:25 GMT',
+150 verbose headers   connection: 'keep-alive',
+150 verbose headers   'set-cookie':
+150 verbose headers    [ '__cfduid=d150f8d05cb2ccb45a54edb14ae18f7501572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+150 verbose headers   'cf-cache-status': 'MISS',
+150 verbose headers   'cache-control': 'max-age=300',
+150 verbose headers   'cf-ray': '52f402149bdc564f-JNB',
+150 verbose headers   etag: '"c24d248ad8137d9ba2e9361016d519f1"',
+150 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+150 verbose headers   'last-modified': 'Sun, 27 May 2018 06:21:14 GMT',
+150 verbose headers   vary: 'accept-encoding, accept',
+150 verbose headers   server: 'cloudflare' }
+151 silly get cb [ 304,
+151 silly get   { date: 'Sat, 02 Nov 2019 06:21:25 GMT',
+151 silly get     connection: 'keep-alive',
+151 silly get     'set-cookie':
+151 silly get      [ '__cfduid=d150f8d05cb2ccb45a54edb14ae18f7501572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+151 silly get     'cf-cache-status': 'MISS',
+151 silly get     'cache-control': 'max-age=300',
+151 silly get     'cf-ray': '52f402149bdc564f-JNB',
+151 silly get     etag: '"c24d248ad8137d9ba2e9361016d519f1"',
+151 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+151 silly get     'last-modified': 'Sun, 27 May 2018 06:21:14 GMT',
+151 silly get     vary: 'accept-encoding, accept',
+151 silly get     server: 'cloudflare' } ]
+152 verbose etag https://registry.npmjs.org/kuromoji from cache
+153 verbose get saving kuromoji to /home/afmika/.npm/registry.npmjs.org/kuromoji/.cache.json
+154 http 304 https://registry.npmjs.org/escodegen
+155 verbose headers { date: 'Sat, 02 Nov 2019 06:21:25 GMT',
+155 verbose headers   connection: 'keep-alive',
+155 verbose headers   'set-cookie':
+155 verbose headers    [ '__cfduid=d3ac7a336ba217d3973e589524477e5ab1572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+155 verbose headers   'cf-cache-status': 'REVALIDATED',
+155 verbose headers   'cache-control': 'max-age=300',
+155 verbose headers   'cf-ray': '52f402148d0bac88-JNB',
+155 verbose headers   etag: '"2ea02d64be09abbcbd83423632e87d4d"',
+155 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+155 verbose headers   'last-modified': 'Tue, 13 Aug 2019 02:10:00 GMT',
+155 verbose headers   vary: 'accept-encoding, accept',
+155 verbose headers   'x-amz-meta-rev': '133-1ddddf22bced83cf4f9f5eee715cf7ea',
+155 verbose headers   server: 'cloudflare' }
+156 silly get cb [ 304,
+156 silly get   { date: 'Sat, 02 Nov 2019 06:21:25 GMT',
+156 silly get     connection: 'keep-alive',
+156 silly get     'set-cookie':
+156 silly get      [ '__cfduid=d3ac7a336ba217d3973e589524477e5ab1572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+156 silly get     'cf-cache-status': 'REVALIDATED',
+156 silly get     'cache-control': 'max-age=300',
+156 silly get     'cf-ray': '52f402148d0bac88-JNB',
+156 silly get     etag: '"2ea02d64be09abbcbd83423632e87d4d"',
+156 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+156 silly get     'last-modified': 'Tue, 13 Aug 2019 02:10:00 GMT',
+156 silly get     vary: 'accept-encoding, accept',
+156 silly get     'x-amz-meta-rev': '133-1ddddf22bced83cf4f9f5eee715cf7ea',
+156 silly get     server: 'cloudflare' } ]
+157 verbose etag https://registry.npmjs.org/escodegen from cache
+158 verbose get saving escodegen to /home/afmika/.npm/registry.npmjs.org/escodegen/.cache.json
+159 silly resolveWithNewModule kuromoji@0.1.2 checking installable status
+160 silly cache add args [ 'kuromoji@^0.1.2', null ]
+161 verbose cache add spec kuromoji@^0.1.2
+162 silly cache add parsed spec Result {
+162 silly cache add   raw: 'kuromoji@^0.1.2',
+162 silly cache add   scope: null,
+162 silly cache add   name: 'kuromoji',
+162 silly cache add   rawSpec: '^0.1.2',
+162 silly cache add   spec: '>=0.1.2 <0.2.0',
+162 silly cache add   type: 'range' }
+163 silly addNamed kuromoji@>=0.1.2 <0.2.0
+164 verbose addNamed ">=0.1.2 <0.2.0" is a valid semver range for kuromoji
+165 silly addNameRange { name: 'kuromoji', range: '>=0.1.2 <0.2.0', hasData: false }
+166 silly mapToRegistry name kuromoji
+167 silly mapToRegistry using default registry
+168 silly mapToRegistry registry https://registry.npmjs.org/
+169 silly mapToRegistry uri https://registry.npmjs.org/kuromoji
+170 verbose addNameRange registry:https://registry.npmjs.org/kuromoji not in flight; fetching
+171 silly resolveWithNewModule esprima@4.0.1 checking installable status
+172 silly cache add args [ 'esprima@^4.0.1', null ]
+173 verbose cache add spec esprima@^4.0.1
+174 silly cache add parsed spec Result {
+174 silly cache add   raw: 'esprima@^4.0.1',
+174 silly cache add   scope: null,
+174 silly cache add   name: 'esprima',
+174 silly cache add   rawSpec: '^4.0.1',
+174 silly cache add   spec: '>=4.0.1 <5.0.0',
+174 silly cache add   type: 'range' }
+175 silly addNamed esprima@>=4.0.1 <5.0.0
+176 verbose addNamed ">=4.0.1 <5.0.0" is a valid semver range for esprima
+177 silly addNameRange { name: 'esprima', range: '>=4.0.1 <5.0.0', hasData: false }
+178 silly mapToRegistry name esprima
+179 silly mapToRegistry using default registry
+180 silly mapToRegistry registry https://registry.npmjs.org/
+181 silly mapToRegistry uri https://registry.npmjs.org/esprima
+182 verbose addNameRange registry:https://registry.npmjs.org/esprima not in flight; fetching
+183 verbose get https://registry.npmjs.org/kuromoji not expired, no request
+184 silly addNameRange number 2 { name: 'kuromoji', range: '>=0.1.2 <0.2.0', hasData: true }
+185 silly addNameRange versions [ 'kuromoji',
+185 silly addNameRange   [ '0.0.2', '0.0.3', '0.0.4', '0.0.5', '0.1.0', '0.1.1', '0.1.2' ] ]
+186 silly addNamed kuromoji@0.1.2
+187 verbose addNamed "0.1.2" is a plain semver version for kuromoji
+188 silly resolveWithNewModule escodegen@1.12.0 checking installable status
+189 silly cache add args [ 'escodegen@^1.12.0', null ]
+190 verbose cache add spec escodegen@^1.12.0
+191 silly cache add parsed spec Result {
+191 silly cache add   raw: 'escodegen@^1.12.0',
+191 silly cache add   scope: null,
+191 silly cache add   name: 'escodegen',
+191 silly cache add   rawSpec: '^1.12.0',
+191 silly cache add   spec: '>=1.12.0 <2.0.0',
+191 silly cache add   type: 'range' }
+192 silly addNamed escodegen@>=1.12.0 <2.0.0
+193 verbose addNamed ">=1.12.0 <2.0.0" is a valid semver range for escodegen
+194 silly addNameRange { name: 'escodegen', range: '>=1.12.0 <2.0.0', hasData: false }
+195 silly mapToRegistry name escodegen
+196 silly mapToRegistry using default registry
+197 silly mapToRegistry registry https://registry.npmjs.org/
+198 silly mapToRegistry uri https://registry.npmjs.org/escodegen
+199 verbose addNameRange registry:https://registry.npmjs.org/escodegen not in flight; fetching
+200 verbose get https://registry.npmjs.org/esprima not expired, no request
+201 silly addNameRange number 2 { name: 'esprima', range: '>=4.0.1 <5.0.0', hasData: true }
+202 silly addNameRange versions [ 'esprima',
+202 silly addNameRange   [ '0.7.0',
+202 silly addNameRange     '0.8.0',
+202 silly addNameRange     '0.8.1',
+202 silly addNameRange     '0.8.2',
+202 silly addNameRange     '0.9.0',
+202 silly addNameRange     '0.9.1',
+202 silly addNameRange     '0.9.2',
+202 silly addNameRange     '0.9.3',
+202 silly addNameRange     '0.9.4',
+202 silly addNameRange     '0.9.5',
+202 silly addNameRange     '0.9.6',
+202 silly addNameRange     '0.9.7',
+202 silly addNameRange     '0.9.8',
+202 silly addNameRange     '0.9.9',
+202 silly addNameRange     '1.0.0',
+202 silly addNameRange     '1.0.1',
+202 silly addNameRange     '1.0.2',
+202 silly addNameRange     '1.0.3',
+202 silly addNameRange     '1.0.4',
+202 silly addNameRange     '1.1.0',
+202 silly addNameRange     '1.1.1',
+202 silly addNameRange     '1.2.0',
+202 silly addNameRange     '1.2.1',
+202 silly addNameRange     '1.2.2',
+202 silly addNameRange     '1.2.3',
+202 silly addNameRange     '1.2.4',
+202 silly addNameRange     '2.0.0',
+202 silly addNameRange     '1.2.5',
+202 silly addNameRange     '2.1.0',
+202 silly addNameRange     '2.2.0',
+202 silly addNameRange     '2.3.0',
+202 silly addNameRange     '2.4.0',
+202 silly addNameRange     '2.4.1',
+202 silly addNameRange     '2.5.0',
+202 silly addNameRange     '2.6.0',
+202 silly addNameRange     '2.7.0',
+202 silly addNameRange     '2.7.1',
+202 silly addNameRange     '2.7.2',
+202 silly addNameRange     '2.7.3',
+202 silly addNameRange     '3.0.0',
+202 silly addNameRange     '3.1.0',
+202 silly addNameRange     '3.1.1',
+202 silly addNameRange     '3.1.2',
+202 silly addNameRange     '3.1.3',
+202 silly addNameRange     '4.0.0',
+202 silly addNameRange     '4.0.1' ] ]
+203 silly addNamed esprima@4.0.1
+204 verbose addNamed "4.0.1" is a plain semver version for esprima
+205 silly mapToRegistry name kuromoji
+206 silly mapToRegistry using default registry
+207 silly mapToRegistry registry https://registry.npmjs.org/
+208 silly mapToRegistry uri https://registry.npmjs.org/kuromoji
+209 verbose addRemoteTarball https://registry.npmjs.org/kuromoji/-/kuromoji-0.1.2.tgz not in flight; adding
+210 verbose addRemoteTarball [ 'https://registry.npmjs.org/kuromoji/-/kuromoji-0.1.2.tgz',
+210 verbose addRemoteTarball   '293f0d6706df006112137980588d5daac26d0790' ]
+211 verbose get https://registry.npmjs.org/escodegen not expired, no request
+212 silly addNameRange number 2 { name: 'escodegen', range: '>=1.12.0 <2.0.0', hasData: true }
+213 silly addNameRange versions [ 'escodegen',
+213 silly addNameRange   [ '0.0.1',
+213 silly addNameRange     '0.0.2',
+213 silly addNameRange     '0.0.3',
+213 silly addNameRange     '0.0.4',
+213 silly addNameRange     '0.0.5',
+213 silly addNameRange     '0.0.6',
+213 silly addNameRange     '0.0.7',
+213 silly addNameRange     '0.0.8',
+213 silly addNameRange     '0.0.9',
+213 silly addNameRange     '0.0.10',
+213 silly addNameRange     '0.0.11',
+213 silly addNameRange     '0.0.12',
+213 silly addNameRange     '0.0.14',
+213 silly addNameRange     '0.0.15',
+213 silly addNameRange     '0.0.16',
+213 silly addNameRange     '0.0.17',
+213 silly addNameRange     '0.0.18',
+213 silly addNameRange     '0.0.19',
+213 silly addNameRange     '0.0.20',
+213 silly addNameRange     '0.0.21',
+213 silly addNameRange     '0.0.22',
+213 silly addNameRange     '0.0.23',
+213 silly addNameRange     '0.0.24',
+213 silly addNameRange     '0.0.25',
+213 silly addNameRange     '0.0.26',
+213 silly addNameRange     '0.0.27',
+213 silly addNameRange     '0.0.28',
+213 silly addNameRange     '1.0.0',
+213 silly addNameRange     '1.0.1',
+213 silly addNameRange     '1.1.0',
+213 silly addNameRange     '1.2.0',
+213 silly addNameRange     '1.3.0',
+213 silly addNameRange     '1.3.1',
+213 silly addNameRange     '1.3.2',
+213 silly addNameRange     '1.3.3',
+213 silly addNameRange     '1.4.0',
+213 silly addNameRange     '1.4.1',
+213 silly addNameRange     '1.4.2',
+213 silly addNameRange     '1.4.3',
+213 silly addNameRange     '1.5.0',
+213 silly addNameRange     '1.6.0',
+213 silly addNameRange     '1.6.1',
+213 silly addNameRange     '1.7.0',
+213 silly addNameRange     '1.7.1',
+213 silly addNameRange     '1.8.0',
+213 silly addNameRange     '1.8.1',
+213 silly addNameRange     '1.9.0',
+213 silly addNameRange     '1.9.1',
+213 silly addNameRange     '1.10.0',
+213 silly addNameRange     '1.11.0',
+213 silly addNameRange     '1.11.1',
+213 silly addNameRange     '1.12.0' ] ]
+214 silly addNamed escodegen@1.12.0
+215 verbose addNamed "1.12.0" is a plain semver version for escodegen
+216 info retry fetch attempt 1 at 08:21:11
+217 info attempt registry request try #1 at 08:21:11
+218 http fetch GET https://registry.npmjs.org/kuromoji/-/kuromoji-0.1.2.tgz
+219 silly cache afterAdd xlsx@0.15.1
+220 verbose afterAdd /home/afmika/.npm/xlsx/0.15.1/package/package.json not in flight; writing
+221 verbose afterAdd /home/afmika/.npm/xlsx/0.15.1/package/package.json written
+222 http 304 https://registry.npmjs.org/novel-segment
+223 verbose headers { date: 'Sat, 02 Nov 2019 06:21:25 GMT',
+223 verbose headers   connection: 'keep-alive',
+223 verbose headers   'set-cookie':
+223 verbose headers    [ '__cfduid=d05a913f96aef137b228f5dd1cfa34a981572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+223 verbose headers   'cf-cache-status': 'MISS',
+223 verbose headers   'cache-control': 'max-age=300',
+223 verbose headers   'cf-ray': '52f402151fd55643-JNB',
+223 verbose headers   etag: '"16070f64e6d4f917016e734107812156"',
+223 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+223 verbose headers   'last-modified': 'Fri, 06 Sep 2019 22:17:06 GMT',
+223 verbose headers   vary: 'accept-encoding, accept',
+223 verbose headers   'x-amz-meta-rev': '111-5a8c3f6cebc57e7b2e08939511955539',
+223 verbose headers   server: 'cloudflare' }
+224 silly get cb [ 304,
+224 silly get   { date: 'Sat, 02 Nov 2019 06:21:25 GMT',
+224 silly get     connection: 'keep-alive',
+224 silly get     'set-cookie':
+224 silly get      [ '__cfduid=d05a913f96aef137b228f5dd1cfa34a981572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+224 silly get     'cf-cache-status': 'MISS',
+224 silly get     'cache-control': 'max-age=300',
+224 silly get     'cf-ray': '52f402151fd55643-JNB',
+224 silly get     etag: '"16070f64e6d4f917016e734107812156"',
+224 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+224 silly get     'last-modified': 'Fri, 06 Sep 2019 22:17:06 GMT',
+224 silly get     vary: 'accept-encoding, accept',
+224 silly get     'x-amz-meta-rev': '111-5a8c3f6cebc57e7b2e08939511955539',
+224 silly get     server: 'cloudflare' } ]
+225 verbose etag https://registry.npmjs.org/novel-segment from cache
+226 verbose get saving novel-segment to /home/afmika/.npm/registry.npmjs.org/novel-segment/.cache.json
+227 silly resolveWithNewModule novel-segment@2.5.0 checking installable status
+228 silly cache add args [ 'novel-segment@^2.5.0', null ]
+229 verbose cache add spec novel-segment@^2.5.0
+230 silly cache add parsed spec Result {
+230 silly cache add   raw: 'novel-segment@^2.5.0',
+230 silly cache add   scope: null,
+230 silly cache add   name: 'novel-segment',
+230 silly cache add   rawSpec: '^2.5.0',
+230 silly cache add   spec: '>=2.5.0 <3.0.0',
+230 silly cache add   type: 'range' }
+231 silly addNamed novel-segment@>=2.5.0 <3.0.0
+232 verbose addNamed ">=2.5.0 <3.0.0" is a valid semver range for novel-segment
+233 silly addNameRange { name: 'novel-segment',
+233 silly addNameRange   range: '>=2.5.0 <3.0.0',
+233 silly addNameRange   hasData: false }
+234 silly mapToRegistry name novel-segment
+235 silly mapToRegistry using default registry
+236 silly mapToRegistry registry https://registry.npmjs.org/
+237 silly mapToRegistry uri https://registry.npmjs.org/novel-segment
+238 verbose addNameRange registry:https://registry.npmjs.org/novel-segment not in flight; fetching
+239 verbose get https://registry.npmjs.org/novel-segment not expired, no request
+240 silly addNameRange number 2 { name: 'novel-segment', range: '>=2.5.0 <3.0.0', hasData: true }
+241 silly addNameRange versions [ 'novel-segment',
+241 silly addNameRange   [ '0.1.3',
+241 silly addNameRange     '0.1.5',
+241 silly addNameRange     '0.1.6',
+241 silly addNameRange     '0.1.7',
+241 silly addNameRange     '0.1.8',
+241 silly addNameRange     '0.1.9',
+241 silly addNameRange     '0.1.11',
+241 silly addNameRange     '0.1.12',
+241 silly addNameRange     '0.1.13',
+241 silly addNameRange     '2.0.1',
+241 silly addNameRange     '2.0.2',
+241 silly addNameRange     '2.0.3',
+241 silly addNameRange     '2.0.4',
+241 silly addNameRange     '2.0.5',
+241 silly addNameRange     '2.0.6',
+241 silly addNameRange     '2.0.7',
+241 silly addNameRange     '2.0.8',
+241 silly addNameRange     '2.0.9',
+241 silly addNameRange     '2.0.11',
+241 silly addNameRange     '2.0.12',
+241 silly addNameRange     '2.0.13',
+241 silly addNameRange     '2.0.14',
+241 silly addNameRange     '2.0.15',
+241 silly addNameRange     '2.0.16',
+241 silly addNameRange     '2.0.17',
+241 silly addNameRange     '2.0.18',
+241 silly addNameRange     '2.0.19',
+241 silly addNameRange     '2.0.20',
+241 silly addNameRange     '2.0.21',
+241 silly addNameRange     '2.0.22',
+241 silly addNameRange     '2.0.23',
+241 silly addNameRange     '2.0.24',
+241 silly addNameRange     '2.0.25',
+241 silly addNameRange     '2.0.26',
+241 silly addNameRange     '2.0.27',
+241 silly addNameRange     '2.0.28',
+241 silly addNameRange     '2.0.29',
+241 silly addNameRange     '2.0.30',
+241 silly addNameRange     '2.0.31',
+241 silly addNameRange     '2.0.32',
+241 silly addNameRange     '2.0.33',
+241 silly addNameRange     '2.0.34',
+241 silly addNameRange     '2.0.35',
+241 silly addNameRange     '2.0.36',
+241 silly addNameRange     '2.0.37',
+241 silly addNameRange     '2.0.38',
+241 silly addNameRange     '2.0.39',
+241 silly addNameRange     '2.0.40',
+241 silly addNameRange     '2.0.41',
+241 silly addNameRange     '2.0.42',
+241 silly addNameRange     '2.0.43',
+241 silly addNameRange     '2.0.44',
+241 silly addNameRange     '2.0.45',
+241 silly addNameRange     '2.0.46',
+241 silly addNameRange     '2.0.47',
+241 silly addNameRange     '2.0.48',
+241 silly addNameRange     '2.0.49',
+241 silly addNameRange     '2.0.50',
+241 silly addNameRange     '2.0.51',
+241 silly addNameRange     '2.0.52',
+241 silly addNameRange     '2.0.53',
+241 silly addNameRange     '2.1.0',
+241 silly addNameRange     '2.1.1',
+241 silly addNameRange     '2.1.2',
+241 silly addNameRange     '2.1.3',
+241 silly addNameRange     '2.1.4',
+241 silly addNameRange     '2.2.0',
+241 silly addNameRange     '2.2.1',
+241 silly addNameRange     '2.2.2',
+241 silly addNameRange     '2.2.3',
+241 silly addNameRange     '2.2.4',
+241 silly addNameRange     '2.2.6',
+241 silly addNameRange     '2.2.7',
+241 silly addNameRange     '2.2.8',
+241 silly addNameRange     '2.2.9',
+241 silly addNameRange     '2.2.10',
+241 silly addNameRange     '2.2.11',
+241 silly addNameRange     '2.2.12',
+241 silly addNameRange     '2.2.13',
+241 silly addNameRange     '2.2.14',
+241 silly addNameRange     '2.2.15',
+241 silly addNameRange     '2.2.16',
+241 silly addNameRange     '2.2.17',
+241 silly addNameRange     '2.2.18',
+241 silly addNameRange     '2.2.20',
+241 silly addNameRange     '2.2.21',
+241 silly addNameRange     '2.2.22',
+241 silly addNameRange     '2.2.23',
+241 silly addNameRange     '2.2.24',
+241 silly addNameRange     '2.2.25',
+241 silly addNameRange     '2.2.26',
+241 silly addNameRange     '2.2.27',
+241 silly addNameRange     '2.2.29',
+241 silly addNameRange     '2.2.30',
+241 silly addNameRange     '2.2.32',
+241 silly addNameRange     '2.2.33',
+241 silly addNameRange     '2.2.34',
+241 silly addNameRange     '2.2.35',
+241 silly addNameRange     '2.2.36',
+241 silly addNameRange     '2.2.37',
+241 silly addNameRange     ... 10 more items ] ]
+242 silly addNamed novel-segment@2.5.0
+243 verbose addNamed "2.5.0" is a plain semver version for novel-segment
+244 http fetch 200 https://registry.npmjs.org/kuromoji/-/kuromoji-0.1.2.tgz
+245 silly cache afterAdd novel-segment@2.5.0
+246 verbose afterAdd /home/afmika/.npm/novel-segment/2.5.0/package/package.json not in flight; writing
+247 silly cache afterAdd escodegen@1.12.0
+248 verbose afterAdd /home/afmika/.npm/escodegen/1.12.0/package/package.json not in flight; writing
+249 verbose afterAdd /home/afmika/.npm/novel-segment/2.5.0/package/package.json written
+250 verbose afterAdd /home/afmika/.npm/escodegen/1.12.0/package/package.json written
+251 silly cache afterAdd esprima@4.0.1
+252 verbose afterAdd /home/afmika/.npm/esprima/4.0.1/package/package.json not in flight; writing
+253 verbose afterAdd /home/afmika/.npm/esprima/4.0.1/package/package.json written
+254 http 200 https://registry.npmjs.org/@microsoft%2frecognizers-text-suite
+255 verbose headers { date: 'Sat, 02 Nov 2019 06:21:27 GMT',
+255 verbose headers   'content-type': 'application/json',
+255 verbose headers   'content-length': '9114',
+255 verbose headers   connection: 'keep-alive',
+255 verbose headers   'set-cookie':
+255 verbose headers    [ '__cfduid=dff2a9b49fd6f8c94b6ba77a0024694d41572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+255 verbose headers   'content-encoding': 'gzip',
+255 verbose headers   'cf-cache-status': 'DYNAMIC',
+255 verbose headers   'cf-ray': '52f402132eb3ac28-JNB',
+255 verbose headers   'accept-ranges': 'bytes',
+255 verbose headers   age: '1549241',
+255 verbose headers   etag: 'W/"8b7eb366d58ac68a7bdac66df4ddeaa2"',
+255 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+255 verbose headers   'last-modified': 'Tue, 15 Oct 2019 08:00:44 GMT',
+255 verbose headers   vary: 'Accept, Accept-Encoding',
+255 verbose headers   via: '1.1 varnish (Varnish/5.2)',
+255 verbose headers   'x-amz-meta-rev': '19-4b9774a0d76ce636601d0f88747fbc4b',
+255 verbose headers   'x-varnish': '242130262 1072286556',
+255 verbose headers   server: 'cloudflare' }
+256 silly get cb [ 200,
+256 silly get   { date: 'Sat, 02 Nov 2019 06:21:27 GMT',
+256 silly get     'content-type': 'application/json',
+256 silly get     'content-length': '9114',
+256 silly get     connection: 'keep-alive',
+256 silly get     'set-cookie':
+256 silly get      [ '__cfduid=dff2a9b49fd6f8c94b6ba77a0024694d41572675684; expires=Sun, 01-Nov-20 06:21:24 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+256 silly get     'content-encoding': 'gzip',
+256 silly get     'cf-cache-status': 'DYNAMIC',
+256 silly get     'cf-ray': '52f402132eb3ac28-JNB',
+256 silly get     'accept-ranges': 'bytes',
+256 silly get     age: '1549241',
+256 silly get     etag: 'W/"8b7eb366d58ac68a7bdac66df4ddeaa2"',
+256 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+256 silly get     'last-modified': 'Tue, 15 Oct 2019 08:00:44 GMT',
+256 silly get     vary: 'Accept, Accept-Encoding',
+256 silly get     via: '1.1 varnish (Varnish/5.2)',
+256 silly get     'x-amz-meta-rev': '19-4b9774a0d76ce636601d0f88747fbc4b',
+256 silly get     'x-varnish': '242130262 1072286556',
+256 silly get     server: 'cloudflare' } ]
+257 verbose get saving @microsoft/recognizers-text-suite to /home/afmika/.npm/registry.npmjs.org/_40microsoft_252frecognizers-text-suite/.cache.json
+258 silly resolveWithNewModule @microsoft/recognizers-text-suite@1.1.4 checking installable status
+259 silly cache add args [ '@microsoft/recognizers-text-suite@1.1.4', null ]
+260 verbose cache add spec @microsoft/recognizers-text-suite@1.1.4
+261 silly cache add parsed spec Result {
+261 silly cache add   raw: '@microsoft/recognizers-text-suite@1.1.4',
+261 silly cache add   scope: '@microsoft',
+261 silly cache add   name: '@microsoft/recognizers-text-suite',
+261 silly cache add   rawSpec: '1.1.4',
+261 silly cache add   spec: '1.1.4',
+261 silly cache add   type: 'version' }
+262 silly addNamed @microsoft/recognizers-text-suite@1.1.4
+263 verbose addNamed "1.1.4" is a plain semver version for @microsoft/recognizers-text-suite
+264 silly mapToRegistry name @microsoft/recognizers-text-suite
+265 silly mapToRegistry scope (from package name) @microsoft
+266 verbose mapToRegistry no registry URL found in name for scope @microsoft
+267 silly mapToRegistry using default registry
+268 silly mapToRegistry registry https://registry.npmjs.org/
+269 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-suite
+270 verbose addNameVersion registry:https://registry.npmjs.org/@microsoft%2frecognizers-text-suite not in flight; fetching
+271 verbose get https://registry.npmjs.org/@microsoft%2frecognizers-text-suite not expired, no request
+272 silly mapToRegistry name @microsoft/recognizers-text-suite
+273 silly mapToRegistry scope (from package name) @microsoft
+274 verbose mapToRegistry no registry URL found in name for scope @microsoft
+275 silly mapToRegistry using default registry
+276 silly mapToRegistry registry https://registry.npmjs.org/
+277 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-suite
+278 verbose addRemoteTarball https://registry.npmjs.org/@microsoft/recognizers-text-suite/-/recognizers-text-suite-1.1.4.tgz not in flight; adding
+279 verbose addRemoteTarball [ 'https://registry.npmjs.org/@microsoft/recognizers-text-suite/-/recognizers-text-suite-1.1.4.tgz',
+279 verbose addRemoteTarball   '8adb2128ed3aa60a042be008d4e3449d7128f1df' ]
+280 info retry fetch attempt 1 at 08:21:13
+281 info attempt registry request try #1 at 08:21:13
+282 http fetch GET https://registry.npmjs.org/@microsoft/recognizers-text-suite/-/recognizers-text-suite-1.1.4.tgz
+283 http fetch 200 https://registry.npmjs.org/@microsoft/recognizers-text-suite/-/recognizers-text-suite-1.1.4.tgz
+284 silly fetchAndShaCheck shasum 8adb2128ed3aa60a042be008d4e3449d7128f1df
+285 verbose addTmpTarball /tmp/npm-4799-a6b50b2f/registry.npmjs.org/_40microsoft/recognizers-text-suite/-/recognizers-text-suite-1.1.4.tgz not in flight; adding
+286 verbose addTmpTarball already have metadata; skipping unpack for @microsoft/recognizers-text-suite@1.1.4
+287 silly cache afterAdd @microsoft/recognizers-text-suite@1.1.4
+288 verbose afterAdd /home/afmika/.npm/@microsoft/recognizers-text-suite/1.1.4/package/package.json not in flight; writing
+289 verbose afterAdd /home/afmika/.npm/@microsoft/recognizers-text-suite/1.1.4/package/package.json written
+290 silly fetchAndShaCheck shasum 293f0d6706df006112137980588d5daac26d0790
+291 verbose addTmpTarball /tmp/npm-4799-a6b50b2f/registry.npmjs.org/kuromoji/-/kuromoji-0.1.2.tgz not in flight; adding
+292 verbose addTmpTarball already have metadata; skipping unpack for kuromoji@0.1.2
+293 silly cache afterAdd kuromoji@0.1.2
+294 verbose afterAdd /home/afmika/.npm/kuromoji/0.1.2/package/package.json not in flight; writing
+295 verbose afterAdd /home/afmika/.npm/kuromoji/0.1.2/package/package.json written
+296 silly fetchNamedPackageData @microsoft/recognizers-text
+297 silly mapToRegistry name @microsoft/recognizers-text
+298 silly mapToRegistry scope (from package name) @microsoft
+299 verbose mapToRegistry no registry URL found in name for scope @microsoft
+300 silly mapToRegistry using default registry
+301 silly mapToRegistry registry https://registry.npmjs.org/
+302 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text
+303 silly fetchNamedPackageData @microsoft/recognizers-text-number
+304 silly mapToRegistry name @microsoft/recognizers-text-number
+305 silly mapToRegistry scope (from package name) @microsoft
+306 verbose mapToRegistry no registry URL found in name for scope @microsoft
+307 silly mapToRegistry using default registry
+308 silly mapToRegistry registry https://registry.npmjs.org/
+309 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-number
+310 silly fetchNamedPackageData @microsoft/recognizers-text-number-with-unit
+311 silly mapToRegistry name @microsoft/recognizers-text-number-with-unit
+312 silly mapToRegistry scope (from package name) @microsoft
+313 verbose mapToRegistry no registry URL found in name for scope @microsoft
+314 silly mapToRegistry using default registry
+315 silly mapToRegistry registry https://registry.npmjs.org/
+316 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-number-with-unit
+317 silly fetchNamedPackageData @microsoft/recognizers-text-date-time
+318 silly mapToRegistry name @microsoft/recognizers-text-date-time
+319 silly mapToRegistry scope (from package name) @microsoft
+320 verbose mapToRegistry no registry URL found in name for scope @microsoft
+321 silly mapToRegistry using default registry
+322 silly mapToRegistry registry https://registry.npmjs.org/
+323 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-date-time
+324 silly fetchNamedPackageData @microsoft/recognizers-text-sequence
+325 silly mapToRegistry name @microsoft/recognizers-text-sequence
+326 silly mapToRegistry scope (from package name) @microsoft
+327 verbose mapToRegistry no registry URL found in name for scope @microsoft
+328 silly mapToRegistry using default registry
+329 silly mapToRegistry registry https://registry.npmjs.org/
+330 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-sequence
+331 silly fetchNamedPackageData @microsoft/recognizers-text-choice
+332 silly mapToRegistry name @microsoft/recognizers-text-choice
+333 silly mapToRegistry scope (from package name) @microsoft
+334 verbose mapToRegistry no registry URL found in name for scope @microsoft
+335 silly mapToRegistry using default registry
+336 silly mapToRegistry registry https://registry.npmjs.org/
+337 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-choice
+338 verbose request uri https://registry.npmjs.org/@microsoft%2frecognizers-text-number-with-unit
+339 verbose request no auth needed
+340 info attempt registry request try #1 at 08:23:44
+341 http request GET https://registry.npmjs.org/@microsoft%2frecognizers-text-number-with-unit
+342 verbose request uri https://registry.npmjs.org/@microsoft%2frecognizers-text
+343 verbose request no auth needed
+344 info attempt registry request try #1 at 08:23:44
+345 http request GET https://registry.npmjs.org/@microsoft%2frecognizers-text
+346 verbose request uri https://registry.npmjs.org/@microsoft%2frecognizers-text-number
+347 verbose request no auth needed
+348 info attempt registry request try #1 at 08:23:44
+349 http request GET https://registry.npmjs.org/@microsoft%2frecognizers-text-number
+350 verbose request uri https://registry.npmjs.org/@microsoft%2frecognizers-text-sequence
+351 verbose request no auth needed
+352 info attempt registry request try #1 at 08:23:44
+353 http request GET https://registry.npmjs.org/@microsoft%2frecognizers-text-sequence
+354 verbose request uri https://registry.npmjs.org/@microsoft%2frecognizers-text-choice
+355 verbose request no auth needed
+356 info attempt registry request try #1 at 08:23:44
+357 http request GET https://registry.npmjs.org/@microsoft%2frecognizers-text-choice
+358 verbose request uri https://registry.npmjs.org/@microsoft%2frecognizers-text-date-time
+359 verbose request no auth needed
+360 info attempt registry request try #1 at 08:23:44
+361 http request GET https://registry.npmjs.org/@microsoft%2frecognizers-text-date-time
+362 http 200 https://registry.npmjs.org/@microsoft%2frecognizers-text-choice
+363 verbose headers { date: 'Sat, 02 Nov 2019 06:24:00 GMT',
+363 verbose headers   'content-type': 'application/json',
+363 verbose headers   'transfer-encoding': 'chunked',
+363 verbose headers   connection: 'keep-alive',
+363 verbose headers   'set-cookie':
+363 verbose headers    [ '__cfduid=df1c759c4f6ae4559c9d9ef7a6f57a4bb1572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+363 verbose headers   'cf-cache-status': 'MISS',
+363 verbose headers   'cache-control': 'public, max-age=300',
+363 verbose headers   'cf-ray': '52f405d58930ac2e-JNB',
+363 verbose headers   etag: 'W/"cb5cda2b2b6f3977f1bb64bb80f4c30a"',
+363 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+363 verbose headers   'last-modified': 'Tue, 15 Oct 2019 07:59:32 GMT',
+363 verbose headers   vary: 'Accept-Encoding',
+363 verbose headers   'x-amz-meta-rev': '14-81564120f11226b63a10c5f626407b15',
+363 verbose headers   server: 'cloudflare',
+363 verbose headers   'content-encoding': 'gzip' }
+364 silly get cb [ 200,
+364 silly get   { date: 'Sat, 02 Nov 2019 06:24:00 GMT',
+364 silly get     'content-type': 'application/json',
+364 silly get     'transfer-encoding': 'chunked',
+364 silly get     connection: 'keep-alive',
+364 silly get     'set-cookie':
+364 silly get      [ '__cfduid=df1c759c4f6ae4559c9d9ef7a6f57a4bb1572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+364 silly get     'cf-cache-status': 'MISS',
+364 silly get     'cache-control': 'public, max-age=300',
+364 silly get     'cf-ray': '52f405d58930ac2e-JNB',
+364 silly get     etag: 'W/"cb5cda2b2b6f3977f1bb64bb80f4c30a"',
+364 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+364 silly get     'last-modified': 'Tue, 15 Oct 2019 07:59:32 GMT',
+364 silly get     vary: 'Accept-Encoding',
+364 silly get     'x-amz-meta-rev': '14-81564120f11226b63a10c5f626407b15',
+364 silly get     server: 'cloudflare',
+364 silly get     'content-encoding': 'gzip' } ]
+365 verbose get saving @microsoft/recognizers-text-choice to /home/afmika/.npm/registry.npmjs.org/_40microsoft_252frecognizers-text-choice/.cache.json
+366 silly resolveWithNewModule @microsoft/recognizers-text-choice@1.1.4 checking installable status
+367 silly cache add args [ '@microsoft/recognizers-text-choice@~1.1.4', null ]
+368 verbose cache add spec @microsoft/recognizers-text-choice@~1.1.4
+369 silly cache add parsed spec Result {
+369 silly cache add   raw: '@microsoft/recognizers-text-choice@~1.1.4',
+369 silly cache add   scope: '@microsoft',
+369 silly cache add   name: '@microsoft/recognizers-text-choice',
+369 silly cache add   rawSpec: '~1.1.4',
+369 silly cache add   spec: '>=1.1.4 <1.2.0',
+369 silly cache add   type: 'range' }
+370 silly addNamed @microsoft/recognizers-text-choice@>=1.1.4 <1.2.0
+371 verbose addNamed ">=1.1.4 <1.2.0" is a valid semver range for @microsoft/recognizers-text-choice
+372 silly addNameRange { name: '@microsoft/recognizers-text-choice',
+372 silly addNameRange   range: '>=1.1.4 <1.2.0',
+372 silly addNameRange   hasData: false }
+373 silly mapToRegistry name @microsoft/recognizers-text-choice
+374 silly mapToRegistry scope (from package name) @microsoft
+375 verbose mapToRegistry no registry URL found in name for scope @microsoft
+376 silly mapToRegistry using default registry
+377 silly mapToRegistry registry https://registry.npmjs.org/
+378 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-choice
+379 verbose addNameRange registry:https://registry.npmjs.org/@microsoft%2frecognizers-text-choice not in flight; fetching
+380 verbose get https://registry.npmjs.org/@microsoft%2frecognizers-text-choice not expired, no request
+381 silly addNameRange number 2 { name: '@microsoft/recognizers-text-choice',
+381 silly addNameRange   range: '>=1.1.4 <1.2.0',
+381 silly addNameRange   hasData: true }
+382 silly addNameRange versions [ '@microsoft/recognizers-text-choice',
+382 silly addNameRange   [ '0.0.0',
+382 silly addNameRange     '1.0.0',
+382 silly addNameRange     '1.0.1',
+382 silly addNameRange     '1.1.0',
+382 silly addNameRange     '1.1.2',
+382 silly addNameRange     '1.1.3',
+382 silly addNameRange     '1.1.4',
+382 silly addNameRange     '1.2.7' ] ]
+383 silly addNamed @microsoft/recognizers-text-choice@1.1.4
+384 verbose addNamed "1.1.4" is a plain semver version for @microsoft/recognizers-text-choice
+385 silly mapToRegistry name @microsoft/recognizers-text-choice
+386 silly mapToRegistry scope (from package name) @microsoft
+387 verbose mapToRegistry no registry URL found in name for scope @microsoft
+388 silly mapToRegistry using default registry
+389 silly mapToRegistry registry https://registry.npmjs.org/
+390 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-choice
+391 verbose addRemoteTarball https://registry.npmjs.org/@microsoft/recognizers-text-choice/-/recognizers-text-choice-1.1.4.tgz not in flight; adding
+392 verbose addRemoteTarball [ 'https://registry.npmjs.org/@microsoft/recognizers-text-choice/-/recognizers-text-choice-1.1.4.tgz',
+392 verbose addRemoteTarball   '8e9ae8f804ae49bd57dd6bbf227a2ab0e14a9041' ]
+393 info retry fetch attempt 1 at 08:23:46
+394 info attempt registry request try #1 at 08:23:46
+395 http fetch GET https://registry.npmjs.org/@microsoft/recognizers-text-choice/-/recognizers-text-choice-1.1.4.tgz
+396 http fetch 200 https://registry.npmjs.org/@microsoft/recognizers-text-choice/-/recognizers-text-choice-1.1.4.tgz
+397 http 200 https://registry.npmjs.org/@microsoft%2frecognizers-text-date-time
+398 verbose headers { date: 'Sat, 02 Nov 2019 06:24:01 GMT',
+398 verbose headers   'content-type': 'application/json',
+398 verbose headers   'transfer-encoding': 'chunked',
+398 verbose headers   connection: 'keep-alive',
+398 verbose headers   'set-cookie':
+398 verbose headers    [ '__cfduid=d90bae9524c2464464e8c93f5194cfc9c1572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+398 verbose headers   'cf-cache-status': 'MISS',
+398 verbose headers   'cache-control': 'public, max-age=300',
+398 verbose headers   'cf-ray': '52f405d58a59ac5e-JNB',
+398 verbose headers   etag: 'W/"86a29f2cc6ef78a0954c9d720f8b0a4d"',
+398 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+398 verbose headers   'last-modified': 'Tue, 15 Oct 2019 08:00:22 GMT',
+398 verbose headers   vary: 'Accept-Encoding',
+398 verbose headers   'x-amz-meta-rev': '18-80f6e6eae43253b0a670dd71280c026a',
+398 verbose headers   server: 'cloudflare',
+398 verbose headers   'content-encoding': 'gzip' }
+399 silly get cb [ 200,
+399 silly get   { date: 'Sat, 02 Nov 2019 06:24:01 GMT',
+399 silly get     'content-type': 'application/json',
+399 silly get     'transfer-encoding': 'chunked',
+399 silly get     connection: 'keep-alive',
+399 silly get     'set-cookie':
+399 silly get      [ '__cfduid=d90bae9524c2464464e8c93f5194cfc9c1572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+399 silly get     'cf-cache-status': 'MISS',
+399 silly get     'cache-control': 'public, max-age=300',
+399 silly get     'cf-ray': '52f405d58a59ac5e-JNB',
+399 silly get     etag: 'W/"86a29f2cc6ef78a0954c9d720f8b0a4d"',
+399 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+399 silly get     'last-modified': 'Tue, 15 Oct 2019 08:00:22 GMT',
+399 silly get     vary: 'Accept-Encoding',
+399 silly get     'x-amz-meta-rev': '18-80f6e6eae43253b0a670dd71280c026a',
+399 silly get     server: 'cloudflare',
+399 silly get     'content-encoding': 'gzip' } ]
+400 verbose get saving @microsoft/recognizers-text-date-time to /home/afmika/.npm/registry.npmjs.org/_40microsoft_252frecognizers-text-date-time/.cache.json
+401 silly resolveWithNewModule @microsoft/recognizers-text-date-time@1.1.4 checking installable status
+402 silly cache add args [ '@microsoft/recognizers-text-date-time@~1.1.4', null ]
+403 verbose cache add spec @microsoft/recognizers-text-date-time@~1.1.4
+404 silly cache add parsed spec Result {
+404 silly cache add   raw: '@microsoft/recognizers-text-date-time@~1.1.4',
+404 silly cache add   scope: '@microsoft',
+404 silly cache add   name: '@microsoft/recognizers-text-date-time',
+404 silly cache add   rawSpec: '~1.1.4',
+404 silly cache add   spec: '>=1.1.4 <1.2.0',
+404 silly cache add   type: 'range' }
+405 silly addNamed @microsoft/recognizers-text-date-time@>=1.1.4 <1.2.0
+406 verbose addNamed ">=1.1.4 <1.2.0" is a valid semver range for @microsoft/recognizers-text-date-time
+407 silly addNameRange { name: '@microsoft/recognizers-text-date-time',
+407 silly addNameRange   range: '>=1.1.4 <1.2.0',
+407 silly addNameRange   hasData: false }
+408 silly mapToRegistry name @microsoft/recognizers-text-date-time
+409 silly mapToRegistry scope (from package name) @microsoft
+410 verbose mapToRegistry no registry URL found in name for scope @microsoft
+411 silly mapToRegistry using default registry
+412 silly mapToRegistry registry https://registry.npmjs.org/
+413 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-date-time
+414 verbose addNameRange registry:https://registry.npmjs.org/@microsoft%2frecognizers-text-date-time not in flight; fetching
+415 verbose get https://registry.npmjs.org/@microsoft%2frecognizers-text-date-time not expired, no request
+416 silly addNameRange number 2 { name: '@microsoft/recognizers-text-date-time',
+416 silly addNameRange   range: '>=1.1.4 <1.2.0',
+416 silly addNameRange   hasData: true }
+417 silly addNameRange versions [ '@microsoft/recognizers-text-date-time',
+417 silly addNameRange   [ '0.0.0',
+417 silly addNameRange     '1.0.0-rc.30.0',
+417 silly addNameRange     '1.0.0-rc.31.0',
+417 silly addNameRange     '1.0.0-rc.32.0',
+417 silly addNameRange     '1.0.0',
+417 silly addNameRange     '1.0.1',
+417 silly addNameRange     '1.1.0',
+417 silly addNameRange     '1.1.2',
+417 silly addNameRange     '1.1.3',
+417 silly addNameRange     '1.1.4',
+417 silly addNameRange     '1.2.7' ] ]
+418 silly addNamed @microsoft/recognizers-text-date-time@1.1.4
+419 verbose addNamed "1.1.4" is a plain semver version for @microsoft/recognizers-text-date-time
+420 silly mapToRegistry name @microsoft/recognizers-text-date-time
+421 silly mapToRegistry scope (from package name) @microsoft
+422 verbose mapToRegistry no registry URL found in name for scope @microsoft
+423 silly mapToRegistry using default registry
+424 silly mapToRegistry registry https://registry.npmjs.org/
+425 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-date-time
+426 verbose addRemoteTarball https://registry.npmjs.org/@microsoft/recognizers-text-date-time/-/recognizers-text-date-time-1.1.4.tgz not in flight; adding
+427 verbose addRemoteTarball [ 'https://registry.npmjs.org/@microsoft/recognizers-text-date-time/-/recognizers-text-date-time-1.1.4.tgz',
+427 verbose addRemoteTarball   'd3ccddbc9b9f81bfa564df5b957dbdd740036425' ]
+428 info retry fetch attempt 1 at 08:23:47
+429 info attempt registry request try #1 at 08:23:47
+430 http fetch GET https://registry.npmjs.org/@microsoft/recognizers-text-date-time/-/recognizers-text-date-time-1.1.4.tgz
+431 http 200 https://registry.npmjs.org/@microsoft%2frecognizers-text
+432 verbose headers { date: 'Sat, 02 Nov 2019 06:24:01 GMT',
+432 verbose headers   'content-type': 'application/json',
+432 verbose headers   'transfer-encoding': 'chunked',
+432 verbose headers   connection: 'keep-alive',
+432 verbose headers   'set-cookie':
+432 verbose headers    [ '__cfduid=d4769d25c11837f448f6b3953c38f23ae1572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+432 verbose headers   'cf-cache-status': 'MISS',
+432 verbose headers   'cache-control': 'public, max-age=300',
+432 verbose headers   'cf-ray': '52f405d58d32ac88-JNB',
+432 verbose headers   etag: 'W/"0a7c38a4e39403789bf041b7632ae5f7"',
+432 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+432 verbose headers   'last-modified': 'Tue, 15 Oct 2019 07:59:13 GMT',
+432 verbose headers   vary: 'Accept-Encoding',
+432 verbose headers   'x-amz-meta-rev': '21-56f7e65c879b50b20183eaabde23a39d',
+432 verbose headers   server: 'cloudflare',
+432 verbose headers   'content-encoding': 'gzip' }
+433 silly get cb [ 200,
+433 silly get   { date: 'Sat, 02 Nov 2019 06:24:01 GMT',
+433 silly get     'content-type': 'application/json',
+433 silly get     'transfer-encoding': 'chunked',
+433 silly get     connection: 'keep-alive',
+433 silly get     'set-cookie':
+433 silly get      [ '__cfduid=d4769d25c11837f448f6b3953c38f23ae1572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+433 silly get     'cf-cache-status': 'MISS',
+433 silly get     'cache-control': 'public, max-age=300',
+433 silly get     'cf-ray': '52f405d58d32ac88-JNB',
+433 silly get     etag: 'W/"0a7c38a4e39403789bf041b7632ae5f7"',
+433 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+433 silly get     'last-modified': 'Tue, 15 Oct 2019 07:59:13 GMT',
+433 silly get     vary: 'Accept-Encoding',
+433 silly get     'x-amz-meta-rev': '21-56f7e65c879b50b20183eaabde23a39d',
+433 silly get     server: 'cloudflare',
+433 silly get     'content-encoding': 'gzip' } ]
+434 verbose get saving @microsoft/recognizers-text to /home/afmika/.npm/registry.npmjs.org/_40microsoft_252frecognizers-text/.cache.json
+435 silly resolveWithNewModule @microsoft/recognizers-text@1.1.4 checking installable status
+436 silly cache add args [ '@microsoft/recognizers-text@~1.1.4', null ]
+437 verbose cache add spec @microsoft/recognizers-text@~1.1.4
+438 silly cache add parsed spec Result {
+438 silly cache add   raw: '@microsoft/recognizers-text@~1.1.4',
+438 silly cache add   scope: '@microsoft',
+438 silly cache add   name: '@microsoft/recognizers-text',
+438 silly cache add   rawSpec: '~1.1.4',
+438 silly cache add   spec: '>=1.1.4 <1.2.0',
+438 silly cache add   type: 'range' }
+439 silly addNamed @microsoft/recognizers-text@>=1.1.4 <1.2.0
+440 verbose addNamed ">=1.1.4 <1.2.0" is a valid semver range for @microsoft/recognizers-text
+441 silly addNameRange { name: '@microsoft/recognizers-text',
+441 silly addNameRange   range: '>=1.1.4 <1.2.0',
+441 silly addNameRange   hasData: false }
+442 silly mapToRegistry name @microsoft/recognizers-text
+443 silly mapToRegistry scope (from package name) @microsoft
+444 verbose mapToRegistry no registry URL found in name for scope @microsoft
+445 silly mapToRegistry using default registry
+446 silly mapToRegistry registry https://registry.npmjs.org/
+447 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text
+448 verbose addNameRange registry:https://registry.npmjs.org/@microsoft%2frecognizers-text not in flight; fetching
+449 verbose get https://registry.npmjs.org/@microsoft%2frecognizers-text not expired, no request
+450 silly addNameRange number 2 { name: '@microsoft/recognizers-text',
+450 silly addNameRange   range: '>=1.1.4 <1.2.0',
+450 silly addNameRange   hasData: true }
+451 silly addNameRange versions [ '@microsoft/recognizers-text',
+451 silly addNameRange   [ '0.0.0',
+451 silly addNameRange     '1.0.0-rc.30.0',
+451 silly addNameRange     '1.0.0-rc.31.0',
+451 silly addNameRange     '1.0.0-rc.32.0',
+451 silly addNameRange     '1.0.0',
+451 silly addNameRange     '1.0.1',
+451 silly addNameRange     '1.1.2',
+451 silly addNameRange     '1.1.3',
+451 silly addNameRange     '1.1.4',
+451 silly addNameRange     '1.2.7' ] ]
+452 silly addNamed @microsoft/recognizers-text@1.1.4
+453 verbose addNamed "1.1.4" is a plain semver version for @microsoft/recognizers-text
+454 silly mapToRegistry name @microsoft/recognizers-text
+455 silly mapToRegistry scope (from package name) @microsoft
+456 verbose mapToRegistry no registry URL found in name for scope @microsoft
+457 silly mapToRegistry using default registry
+458 silly mapToRegistry registry https://registry.npmjs.org/
+459 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text
+460 verbose addRemoteTarball https://registry.npmjs.org/@microsoft/recognizers-text/-/recognizers-text-1.1.4.tgz not in flight; adding
+461 verbose addRemoteTarball [ 'https://registry.npmjs.org/@microsoft/recognizers-text/-/recognizers-text-1.1.4.tgz',
+461 verbose addRemoteTarball   '264530f748b2cad3fac54d53538f88ad2bf99b7e' ]
+462 info retry fetch attempt 1 at 08:23:47
+463 info attempt registry request try #1 at 08:23:47
+464 http fetch GET https://registry.npmjs.org/@microsoft/recognizers-text/-/recognizers-text-1.1.4.tgz
+465 http 200 https://registry.npmjs.org/@microsoft%2frecognizers-text-number-with-unit
+466 verbose headers { date: 'Sat, 02 Nov 2019 06:24:01 GMT',
+466 verbose headers   'content-type': 'application/json',
+466 verbose headers   'transfer-encoding': 'chunked',
+466 verbose headers   connection: 'keep-alive',
+466 verbose headers   'set-cookie':
+466 verbose headers    [ '__cfduid=d7e4439beae924e37692829afa44866761572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+466 verbose headers   'cf-cache-status': 'MISS',
+466 verbose headers   'cache-control': 'public, max-age=300',
+466 verbose headers   'cf-ray': '52f405d58c00564f-JNB',
+466 verbose headers   etag: 'W/"b0f84cd35d7128d1c49c4c0019a15304"',
+466 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+466 verbose headers   'last-modified': 'Tue, 15 Oct 2019 07:59:56 GMT',
+466 verbose headers   vary: 'Accept-Encoding',
+466 verbose headers   'x-amz-meta-rev': '18-dd9306df283f10d4ce2bf2f4ae10741f',
+466 verbose headers   server: 'cloudflare',
+466 verbose headers   'content-encoding': 'gzip' }
+467 silly get cb [ 200,
+467 silly get   { date: 'Sat, 02 Nov 2019 06:24:01 GMT',
+467 silly get     'content-type': 'application/json',
+467 silly get     'transfer-encoding': 'chunked',
+467 silly get     connection: 'keep-alive',
+467 silly get     'set-cookie':
+467 silly get      [ '__cfduid=d7e4439beae924e37692829afa44866761572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+467 silly get     'cf-cache-status': 'MISS',
+467 silly get     'cache-control': 'public, max-age=300',
+467 silly get     'cf-ray': '52f405d58c00564f-JNB',
+467 silly get     etag: 'W/"b0f84cd35d7128d1c49c4c0019a15304"',
+467 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+467 silly get     'last-modified': 'Tue, 15 Oct 2019 07:59:56 GMT',
+467 silly get     vary: 'Accept-Encoding',
+467 silly get     'x-amz-meta-rev': '18-dd9306df283f10d4ce2bf2f4ae10741f',
+467 silly get     server: 'cloudflare',
+467 silly get     'content-encoding': 'gzip' } ]
+468 verbose get saving @microsoft/recognizers-text-number-with-unit to /home/afmika/.npm/registry.npmjs.org/_40microsoft_252frecognizers-text-number-with-unit/.cache.json
+469 silly resolveWithNewModule @microsoft/recognizers-text-number-with-unit@1.1.4 checking installable status
+470 silly cache add args [ '@microsoft/recognizers-text-number-with-unit@~1.1.4', null ]
+471 verbose cache add spec @microsoft/recognizers-text-number-with-unit@~1.1.4
+472 silly cache add parsed spec Result {
+472 silly cache add   raw: '@microsoft/recognizers-text-number-with-unit@~1.1.4',
+472 silly cache add   scope: '@microsoft',
+472 silly cache add   name: '@microsoft/recognizers-text-number-with-unit',
+472 silly cache add   rawSpec: '~1.1.4',
+472 silly cache add   spec: '>=1.1.4 <1.2.0',
+472 silly cache add   type: 'range' }
+473 silly addNamed @microsoft/recognizers-text-number-with-unit@>=1.1.4 <1.2.0
+474 verbose addNamed ">=1.1.4 <1.2.0" is a valid semver range for @microsoft/recognizers-text-number-with-unit
+475 silly addNameRange { name: '@microsoft/recognizers-text-number-with-unit',
+475 silly addNameRange   range: '>=1.1.4 <1.2.0',
+475 silly addNameRange   hasData: false }
+476 silly mapToRegistry name @microsoft/recognizers-text-number-with-unit
+477 silly mapToRegistry scope (from package name) @microsoft
+478 verbose mapToRegistry no registry URL found in name for scope @microsoft
+479 silly mapToRegistry using default registry
+480 silly mapToRegistry registry https://registry.npmjs.org/
+481 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-number-with-unit
+482 verbose addNameRange registry:https://registry.npmjs.org/@microsoft%2frecognizers-text-number-with-unit not in flight; fetching
+483 verbose get https://registry.npmjs.org/@microsoft%2frecognizers-text-number-with-unit not expired, no request
+484 silly addNameRange number 2 { name: '@microsoft/recognizers-text-number-with-unit',
+484 silly addNameRange   range: '>=1.1.4 <1.2.0',
+484 silly addNameRange   hasData: true }
+485 silly addNameRange versions [ '@microsoft/recognizers-text-number-with-unit',
+485 silly addNameRange   [ '0.0.0',
+485 silly addNameRange     '1.0.0-rc.30.0',
+485 silly addNameRange     '1.0.0-rc.31.0',
+485 silly addNameRange     '1.0.0-rc.32.0',
+485 silly addNameRange     '1.0.0',
+485 silly addNameRange     '1.0.1',
+485 silly addNameRange     '1.1.0',
+485 silly addNameRange     '1.1.2',
+485 silly addNameRange     '1.1.3',
+485 silly addNameRange     '1.1.4',
+485 silly addNameRange     '1.2.7' ] ]
+486 silly addNamed @microsoft/recognizers-text-number-with-unit@1.1.4
+487 verbose addNamed "1.1.4" is a plain semver version for @microsoft/recognizers-text-number-with-unit
+488 silly mapToRegistry name @microsoft/recognizers-text-number-with-unit
+489 silly mapToRegistry scope (from package name) @microsoft
+490 verbose mapToRegistry no registry URL found in name for scope @microsoft
+491 silly mapToRegistry using default registry
+492 silly mapToRegistry registry https://registry.npmjs.org/
+493 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-number-with-unit
+494 verbose addRemoteTarball https://registry.npmjs.org/@microsoft/recognizers-text-number-with-unit/-/recognizers-text-number-with-unit-1.1.4.tgz not in flight; adding
+495 verbose addRemoteTarball [ 'https://registry.npmjs.org/@microsoft/recognizers-text-number-with-unit/-/recognizers-text-number-with-unit-1.1.4.tgz',
+495 verbose addRemoteTarball   'a7f2614d419adb2fea99e5c324151ea455262aa8' ]
+496 info retry fetch attempt 1 at 08:23:47
+497 info attempt registry request try #1 at 08:23:47
+498 http fetch GET https://registry.npmjs.org/@microsoft/recognizers-text-number-with-unit/-/recognizers-text-number-with-unit-1.1.4.tgz
+499 http 200 https://registry.npmjs.org/@microsoft%2frecognizers-text-sequence
+500 verbose headers { date: 'Sat, 02 Nov 2019 06:24:01 GMT',
+500 verbose headers   'content-type': 'application/json',
+500 verbose headers   'transfer-encoding': 'chunked',
+500 verbose headers   connection: 'keep-alive',
+500 verbose headers   'set-cookie':
+500 verbose headers    [ '__cfduid=daacbff4da4f2c89141a442451606f1fb1572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+500 verbose headers   'cf-cache-status': 'MISS',
+500 verbose headers   'cache-control': 'public, max-age=300',
+500 verbose headers   'cf-ray': '52f405d58f93ac28-JNB',
+500 verbose headers   etag: 'W/"c3ff003349688e3c72cd6c7c32950ab4"',
+500 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+500 verbose headers   'last-modified': 'Tue, 15 Oct 2019 07:59:32 GMT',
+500 verbose headers   vary: 'Accept-Encoding',
+500 verbose headers   'x-amz-meta-rev': '14-59f9f04f20f5f12294047ec9ffccdf73',
+500 verbose headers   server: 'cloudflare',
+500 verbose headers   'content-encoding': 'gzip' }
+501 silly get cb [ 200,
+501 silly get   { date: 'Sat, 02 Nov 2019 06:24:01 GMT',
+501 silly get     'content-type': 'application/json',
+501 silly get     'transfer-encoding': 'chunked',
+501 silly get     connection: 'keep-alive',
+501 silly get     'set-cookie':
+501 silly get      [ '__cfduid=daacbff4da4f2c89141a442451606f1fb1572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+501 silly get     'cf-cache-status': 'MISS',
+501 silly get     'cache-control': 'public, max-age=300',
+501 silly get     'cf-ray': '52f405d58f93ac28-JNB',
+501 silly get     etag: 'W/"c3ff003349688e3c72cd6c7c32950ab4"',
+501 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+501 silly get     'last-modified': 'Tue, 15 Oct 2019 07:59:32 GMT',
+501 silly get     vary: 'Accept-Encoding',
+501 silly get     'x-amz-meta-rev': '14-59f9f04f20f5f12294047ec9ffccdf73',
+501 silly get     server: 'cloudflare',
+501 silly get     'content-encoding': 'gzip' } ]
+502 verbose get saving @microsoft/recognizers-text-sequence to /home/afmika/.npm/registry.npmjs.org/_40microsoft_252frecognizers-text-sequence/.cache.json
+503 silly resolveWithNewModule @microsoft/recognizers-text-sequence@1.1.4 checking installable status
+504 silly cache add args [ '@microsoft/recognizers-text-sequence@~1.1.4', null ]
+505 verbose cache add spec @microsoft/recognizers-text-sequence@~1.1.4
+506 silly cache add parsed spec Result {
+506 silly cache add   raw: '@microsoft/recognizers-text-sequence@~1.1.4',
+506 silly cache add   scope: '@microsoft',
+506 silly cache add   name: '@microsoft/recognizers-text-sequence',
+506 silly cache add   rawSpec: '~1.1.4',
+506 silly cache add   spec: '>=1.1.4 <1.2.0',
+506 silly cache add   type: 'range' }
+507 silly addNamed @microsoft/recognizers-text-sequence@>=1.1.4 <1.2.0
+508 verbose addNamed ">=1.1.4 <1.2.0" is a valid semver range for @microsoft/recognizers-text-sequence
+509 silly addNameRange { name: '@microsoft/recognizers-text-sequence',
+509 silly addNameRange   range: '>=1.1.4 <1.2.0',
+509 silly addNameRange   hasData: false }
+510 silly mapToRegistry name @microsoft/recognizers-text-sequence
+511 silly mapToRegistry scope (from package name) @microsoft
+512 verbose mapToRegistry no registry URL found in name for scope @microsoft
+513 silly mapToRegistry using default registry
+514 silly mapToRegistry registry https://registry.npmjs.org/
+515 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-sequence
+516 verbose addNameRange registry:https://registry.npmjs.org/@microsoft%2frecognizers-text-sequence not in flight; fetching
+517 verbose get https://registry.npmjs.org/@microsoft%2frecognizers-text-sequence not expired, no request
+518 silly addNameRange number 2 { name: '@microsoft/recognizers-text-sequence',
+518 silly addNameRange   range: '>=1.1.4 <1.2.0',
+518 silly addNameRange   hasData: true }
+519 silly addNameRange versions [ '@microsoft/recognizers-text-sequence',
+519 silly addNameRange   [ '0.0.0',
+519 silly addNameRange     '1.0.0',
+519 silly addNameRange     '1.0.1',
+519 silly addNameRange     '1.1.0',
+519 silly addNameRange     '1.1.2',
+519 silly addNameRange     '1.1.3',
+519 silly addNameRange     '1.1.4',
+519 silly addNameRange     '1.2.7' ] ]
+520 silly addNamed @microsoft/recognizers-text-sequence@1.1.4
+521 verbose addNamed "1.1.4" is a plain semver version for @microsoft/recognizers-text-sequence
+522 silly mapToRegistry name @microsoft/recognizers-text-sequence
+523 silly mapToRegistry scope (from package name) @microsoft
+524 verbose mapToRegistry no registry URL found in name for scope @microsoft
+525 silly mapToRegistry using default registry
+526 silly mapToRegistry registry https://registry.npmjs.org/
+527 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-sequence
+528 verbose addRemoteTarball https://registry.npmjs.org/@microsoft/recognizers-text-sequence/-/recognizers-text-sequence-1.1.4.tgz not in flight; adding
+529 verbose addRemoteTarball [ 'https://registry.npmjs.org/@microsoft/recognizers-text-sequence/-/recognizers-text-sequence-1.1.4.tgz',
+529 verbose addRemoteTarball   '339f38292ba207cd78ee27defeea1ab79206fa5d' ]
+530 info retry fetch attempt 1 at 08:23:47
+531 info attempt registry request try #1 at 08:23:47
+532 http fetch GET https://registry.npmjs.org/@microsoft/recognizers-text-sequence/-/recognizers-text-sequence-1.1.4.tgz
+533 http 200 https://registry.npmjs.org/@microsoft%2frecognizers-text-number
+534 verbose headers { date: 'Sat, 02 Nov 2019 06:24:01 GMT',
+534 verbose headers   'content-type': 'application/json',
+534 verbose headers   'transfer-encoding': 'chunked',
+534 verbose headers   connection: 'keep-alive',
+534 verbose headers   'set-cookie':
+534 verbose headers    [ '__cfduid=d3adcb38b7700ad8c6830c44deda082621572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+534 verbose headers   'cf-cache-status': 'MISS',
+534 verbose headers   'cache-control': 'public, max-age=300',
+534 verbose headers   'cf-ray': '52f405d58b225643-JNB',
+534 verbose headers   etag: 'W/"3c141a9a4bb9ef0614ed3fdd206bcf16"',
+534 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+534 verbose headers   'last-modified': 'Tue, 15 Oct 2019 07:59:34 GMT',
+534 verbose headers   vary: 'Accept-Encoding',
+534 verbose headers   'x-amz-meta-rev': '18-8d950afeeb6fcba4aa8498c257f96524',
+534 verbose headers   server: 'cloudflare',
+534 verbose headers   'content-encoding': 'gzip' }
+535 silly get cb [ 200,
+535 silly get   { date: 'Sat, 02 Nov 2019 06:24:01 GMT',
+535 silly get     'content-type': 'application/json',
+535 silly get     'transfer-encoding': 'chunked',
+535 silly get     connection: 'keep-alive',
+535 silly get     'set-cookie':
+535 silly get      [ '__cfduid=d3adcb38b7700ad8c6830c44deda082621572675838; expires=Sun, 01-Nov-20 06:23:58 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+535 silly get     'cf-cache-status': 'MISS',
+535 silly get     'cache-control': 'public, max-age=300',
+535 silly get     'cf-ray': '52f405d58b225643-JNB',
+535 silly get     etag: 'W/"3c141a9a4bb9ef0614ed3fdd206bcf16"',
+535 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+535 silly get     'last-modified': 'Tue, 15 Oct 2019 07:59:34 GMT',
+535 silly get     vary: 'Accept-Encoding',
+535 silly get     'x-amz-meta-rev': '18-8d950afeeb6fcba4aa8498c257f96524',
+535 silly get     server: 'cloudflare',
+535 silly get     'content-encoding': 'gzip' } ]
+536 verbose get saving @microsoft/recognizers-text-number to /home/afmika/.npm/registry.npmjs.org/_40microsoft_252frecognizers-text-number/.cache.json
+537 silly resolveWithNewModule @microsoft/recognizers-text-number@1.1.4 checking installable status
+538 silly cache add args [ '@microsoft/recognizers-text-number@~1.1.4', null ]
+539 verbose cache add spec @microsoft/recognizers-text-number@~1.1.4
+540 silly cache add parsed spec Result {
+540 silly cache add   raw: '@microsoft/recognizers-text-number@~1.1.4',
+540 silly cache add   scope: '@microsoft',
+540 silly cache add   name: '@microsoft/recognizers-text-number',
+540 silly cache add   rawSpec: '~1.1.4',
+540 silly cache add   spec: '>=1.1.4 <1.2.0',
+540 silly cache add   type: 'range' }
+541 silly addNamed @microsoft/recognizers-text-number@>=1.1.4 <1.2.0
+542 verbose addNamed ">=1.1.4 <1.2.0" is a valid semver range for @microsoft/recognizers-text-number
+543 silly addNameRange { name: '@microsoft/recognizers-text-number',
+543 silly addNameRange   range: '>=1.1.4 <1.2.0',
+543 silly addNameRange   hasData: false }
+544 silly mapToRegistry name @microsoft/recognizers-text-number
+545 silly mapToRegistry scope (from package name) @microsoft
+546 verbose mapToRegistry no registry URL found in name for scope @microsoft
+547 silly mapToRegistry using default registry
+548 silly mapToRegistry registry https://registry.npmjs.org/
+549 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-number
+550 verbose addNameRange registry:https://registry.npmjs.org/@microsoft%2frecognizers-text-number not in flight; fetching
+551 verbose get https://registry.npmjs.org/@microsoft%2frecognizers-text-number not expired, no request
+552 silly addNameRange number 2 { name: '@microsoft/recognizers-text-number',
+552 silly addNameRange   range: '>=1.1.4 <1.2.0',
+552 silly addNameRange   hasData: true }
+553 silly addNameRange versions [ '@microsoft/recognizers-text-number',
+553 silly addNameRange   [ '0.0.0',
+553 silly addNameRange     '1.0.0-rc.30.0',
+553 silly addNameRange     '1.0.0-rc.31.0',
+553 silly addNameRange     '1.0.0-rc.32.0',
+553 silly addNameRange     '1.0.0',
+553 silly addNameRange     '1.0.1',
+553 silly addNameRange     '1.1.0',
+553 silly addNameRange     '1.1.2',
+553 silly addNameRange     '1.1.3',
+553 silly addNameRange     '1.1.4',
+553 silly addNameRange     '1.2.7' ] ]
+554 silly addNamed @microsoft/recognizers-text-number@1.1.4
+555 verbose addNamed "1.1.4" is a plain semver version for @microsoft/recognizers-text-number
+556 silly mapToRegistry name @microsoft/recognizers-text-number
+557 silly mapToRegistry scope (from package name) @microsoft
+558 verbose mapToRegistry no registry URL found in name for scope @microsoft
+559 silly mapToRegistry using default registry
+560 silly mapToRegistry registry https://registry.npmjs.org/
+561 silly mapToRegistry uri https://registry.npmjs.org/@microsoft%2frecognizers-text-number
+562 verbose addRemoteTarball https://registry.npmjs.org/@microsoft/recognizers-text-number/-/recognizers-text-number-1.1.4.tgz not in flight; adding
+563 verbose addRemoteTarball [ 'https://registry.npmjs.org/@microsoft/recognizers-text-number/-/recognizers-text-number-1.1.4.tgz',
+563 verbose addRemoteTarball   '1fbe0473322e6292bb93f9af86c6ca5ce05212d9' ]
+564 info retry fetch attempt 1 at 08:23:48
+565 info attempt registry request try #1 at 08:23:48
+566 http fetch GET https://registry.npmjs.org/@microsoft/recognizers-text-number/-/recognizers-text-number-1.1.4.tgz
+567 http fetch 200 https://registry.npmjs.org/@microsoft/recognizers-text/-/recognizers-text-1.1.4.tgz
+568 http fetch 200 https://registry.npmjs.org/@microsoft/recognizers-text-sequence/-/recognizers-text-sequence-1.1.4.tgz
+569 http fetch 200 https://registry.npmjs.org/@microsoft/recognizers-text-number/-/recognizers-text-number-1.1.4.tgz
+570 http fetch 200 https://registry.npmjs.org/@microsoft/recognizers-text-date-time/-/recognizers-text-date-time-1.1.4.tgz
+571 http fetch 200 https://registry.npmjs.org/@microsoft/recognizers-text-number-with-unit/-/recognizers-text-number-with-unit-1.1.4.tgz
+572 silly fetchAndShaCheck shasum 8e9ae8f804ae49bd57dd6bbf227a2ab0e14a9041
+573 verbose addTmpTarball /tmp/npm-4799-a6b50b2f/registry.npmjs.org/_40microsoft/recognizers-text-choice/-/recognizers-text-choice-1.1.4.tgz not in flight; adding
+574 verbose addTmpTarball already have metadata; skipping unpack for @microsoft/recognizers-text-choice@1.1.4
+575 silly cache afterAdd @microsoft/recognizers-text-choice@1.1.4
+576 verbose afterAdd /home/afmika/.npm/@microsoft/recognizers-text-choice/1.1.4/package/package.json not in flight; writing
+577 verbose afterAdd /home/afmika/.npm/@microsoft/recognizers-text-choice/1.1.4/package/package.json written
+578 silly fetchAndShaCheck shasum 1fbe0473322e6292bb93f9af86c6ca5ce05212d9
+579 verbose addTmpTarball /tmp/npm-4799-a6b50b2f/registry.npmjs.org/_40microsoft/recognizers-text-number/-/recognizers-text-number-1.1.4.tgz not in flight; adding
+580 verbose addTmpTarball already have metadata; skipping unpack for @microsoft/recognizers-text-number@1.1.4
+581 silly cache afterAdd @microsoft/recognizers-text-number@1.1.4
+582 verbose afterAdd /home/afmika/.npm/@microsoft/recognizers-text-number/1.1.4/package/package.json not in flight; writing
+583 verbose afterAdd /home/afmika/.npm/@microsoft/recognizers-text-number/1.1.4/package/package.json written
+584 silly fetchAndShaCheck shasum 339f38292ba207cd78ee27defeea1ab79206fa5d
+585 verbose addTmpTarball /tmp/npm-4799-a6b50b2f/registry.npmjs.org/_40microsoft/recognizers-text-sequence/-/recognizers-text-sequence-1.1.4.tgz not in flight; adding
+586 verbose addTmpTarball already have metadata; skipping unpack for @microsoft/recognizers-text-sequence@1.1.4
+587 silly cache afterAdd @microsoft/recognizers-text-sequence@1.1.4
+588 verbose afterAdd /home/afmika/.npm/@microsoft/recognizers-text-sequence/1.1.4/package/package.json not in flight; writing
+589 verbose afterAdd /home/afmika/.npm/@microsoft/recognizers-text-sequence/1.1.4/package/package.json written
+590 silly fetchAndShaCheck shasum d3ccddbc9b9f81bfa564df5b957dbdd740036425
+591 verbose addTmpTarball /tmp/npm-4799-a6b50b2f/registry.npmjs.org/_40microsoft/recognizers-text-date-time/-/recognizers-text-date-time-1.1.4.tgz not in flight; adding
+592 verbose addTmpTarball already have metadata; skipping unpack for @microsoft/recognizers-text-date-time@1.1.4
+593 silly cache afterAdd @microsoft/recognizers-text-date-time@1.1.4
+594 verbose afterAdd /home/afmika/.npm/@microsoft/recognizers-text-date-time/1.1.4/package/package.json not in flight; writing
+595 verbose afterAdd /home/afmika/.npm/@microsoft/recognizers-text-date-time/1.1.4/package/package.json written
+596 info retry will retry, error on last attempt: Error: read ETIMEDOUT
+597 info retry will retry, error on last attempt: Error: read ETIMEDOUT
+598 silly fetchAndShaCheck shasum 264530f748b2cad3fac54d53538f88ad2bf99b7e
+599 info attempt registry request try #2 at 08:35:42
+600 http fetch GET https://registry.npmjs.org/@microsoft/recognizers-text/-/recognizers-text-1.1.4.tgz
+601 info retry will retry, error on last attempt: Error: read ETIMEDOUT
+602 info retry will retry, error on last attempt: Error: read ETIMEDOUT
+603 silly fetchAndShaCheck shasum a7f2614d419adb2fea99e5c324151ea455262aa8
+604 silly rollbackFailedOptional Starting
+605 silly rollbackFailedOptional Finishing
+606 silly runTopLevelLifecycles Starting
+607 silly runTopLevelLifecycles Finishing
+608 silly install printInstalled
+609 verbose stack Error: shasum check failed for /tmp/npm-4799-a6b50b2f/registry.npmjs.org/_40microsoft/recognizers-text/-/recognizers-text-1.1.4.tgz
+609 verbose stack Expected: 264530f748b2cad3fac54d53538f88ad2bf99b7e
+609 verbose stack Actual:   4b4946b540427b4569272ad9cbdbab2237a0e7e9
+609 verbose stack From:     https://registry.npmjs.org/@microsoft/recognizers-text/-/recognizers-text-1.1.4.tgz
+609 verbose stack     at /usr/share/npm/node_modules/sha/index.js:25:8
+609 verbose stack     at ReadStream.<anonymous> (/usr/share/npm/node_modules/sha/index.js:72:7)
+609 verbose stack     at emitNone (events.js:111:20)
+609 verbose stack     at ReadStream.emit (events.js:208:7)
+609 verbose stack     at endReadableNT (_stream_readable.js:1064:12)
+609 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:138:11)
+609 verbose stack     at process._tickCallback (internal/process/next_tick.js:180:9)
+610 verbose cwd /media/afmika/Disque local/Projet Mika/afNLP
+611 error Linux 4.15.0-54-generic
+612 error argv "/usr/bin/node" "/usr/bin/npm" "install" "node-nlp"
+613 error node v8.10.0
+614 error npm  v3.5.2
+615 error shasum check failed for /tmp/npm-4799-a6b50b2f/registry.npmjs.org/_40microsoft/recognizers-text/-/recognizers-text-1.1.4.tgz
+615 error Expected: 264530f748b2cad3fac54d53538f88ad2bf99b7e
+615 error Actual:   4b4946b540427b4569272ad9cbdbab2237a0e7e9
+615 error From:     https://registry.npmjs.org/@microsoft/recognizers-text/-/recognizers-text-1.1.4.tgz
+616 error If you need help, you may report this error at:
+616 error     <https://github.com/npm/npm/issues>
+617 verbose exit [ 1, true ]

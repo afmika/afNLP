@@ -1,0 +1,15 @@
+make the file loader async
+some datas looks like "word1_word2..."
+
+Tokenize
+- replace [\s]+ by a single space [\s]
+- consider stuff in << "" >> as a single token
+- for each token split by "," or ";" => makes more subtoken
+- for each token split by space
+- compare each token with the database and categorize it
+
+foreach tokens replace _ by a space
+once it's done and If the tokens is in the
+sentence (regex test + lenvenshtein) then push
+it into an array
+
