@@ -1,26 +1,45 @@
 const fs = require('fs');
-const default_path = "./shiori-core/data/shiori-data/";
+const default_path = "./shiori-core/data/shiori-data/en/";
 
 
 module.exports = class DataLoader {
     constructor(path) {
         this.path = path || default_path;    
         this.data = {};
+        this.dbfiles = {
+            "adj" : "adj",
+            "adv" : "adv",
+            "noun" : "noun",
+            "verb" : "verb",
+            "prepositions" : "prepositions",
+
+            "pronoun.demonstrative" : "pronoun.demonstrative",
+            "pronoun.indefinite" : "pronoun.indefinite",
+            "pronoun.intensive" : "pronoun.intensive",
+            "pronoun.interrogative" : "pronoun.interrogative",
+            "pronoun.objective" : "pronoun.objective",
+            "pronoun.personal" : "pronoun.personal",
+            "pronoun.possessive" : "pronoun.possessive",
+            "pronoun.reciprocal" : "pronoun.reciprocal",
+            "pronoun.reflexive" : "pronoun.reflexive",
+            "pronoun.relative" : "pronoun.relative",
+            "pronoun.subjective" : "pronoun.subjective"
+        };
     }
 
     load() {
-        let db_path = this.getDBPath();
+        let db_path = this.getDBFilesPath();
 
         for(let categ in db_path) {
-            let categ_path = db_path[categ];
+            let categ_path = this.path + db_path[categ];
             this.data[categ] = [];
             try {
-                console.log(categ_path);
                 let tmp = fs.readFileSync(categ_path);
                 this.data[categ] = tmp.toString().split("\n");
             } catch(e) {
                 console.log("ERROR ... Failed to read <"+categ_path+">");            
             }       
+
         }
         console.log("Loading done...");
     }
@@ -33,26 +52,8 @@ module.exports = class DataLoader {
         return this.data[categ];
     }
 
-    getDBPath() {
-        return {
-            "adj" : this.path + "en/adj",
-            "adv" : this.path + "en/adv",
-            "noun" : this.path + "en/noun",
-            "verb" : this.path + "en/verb",
-            "prepositions" : this.path + "en/prepositions",
-
-            "pronoun.demonstrative" : this.path + "en/pronoun.demonstrative",
-            "pronoun.indefinite" : this.path + "en/pronoun.indefinite",
-            "pronoun.intensive" : this.path + "en/pronoun.intensive",
-            "pronoun.interrogative" : this.path + "en/pronoun.interrogative",
-            "pronoun.objective" : this.path + "en/pronoun.objective",
-            "pronoun.personal" : this.path + "en/pronoun.personal",
-            "pronoun.possessive" : this.path + "en/pronoun.possessive",
-            "pronoun.reciprocal" : this.path + "en/pronoun.reciprocal",
-            "pronoun.reflexive" : this.path + "en/pronoun.reflexive",
-            "pronoun.relative" : this.path + "en/pronoun.relative",
-            "pronoun.subjective" : this.path + "en/pronoun.subjective"
-        }
+    getDBFilesPath() {
+        return this.dbfiles;
     }
 }
 
