@@ -27,7 +27,7 @@ module.exports = class DataLoader {
         };
     }
 
-    load() {
+    loadSync() {
         let db_path = this.getDBFilesPath();
 
         for(let categ in db_path) {
@@ -37,11 +37,27 @@ module.exports = class DataLoader {
                 let tmp = fs.readFileSync(categ_path);
                 this.data[categ] = tmp.toString().split("\n");
             } catch(e) {
-                console.log("ERROR ... Failed to read <"+categ_path+">");            
-            }       
-
+                console.log("ERROR ... Failed to read "+categ_path);
+                return false; 
+            }
         }
         console.log("Loading done...");
+        return true;
+    }
+
+    load(callback) {
+        let that = this;
+        new Promise((resolve, reject) => {
+            if(that.loadSync()) {
+                resolve(that);
+            } else {
+                reject("Loading failed :(");
+            }
+        }).then(loader_obj => {
+            callback(loader_obj.getData());
+        }).catch(err => {
+            console.log(err);
+        });
     }
 
     getData() {
