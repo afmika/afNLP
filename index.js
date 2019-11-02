@@ -27,19 +27,19 @@ grammar.defineAlias({
     ],
     "PP" : "prepositions",//
 
-    // recursive definition works too
+    // recurs. def. works too
     "SUB" : ["PRN", "PP"],
     "Smthg" : ["SUB", "verb"]
 });
 
 db.load(function(data) {
-    let text = `they want coffee`;
+    let text = `I do not want to eat burger`;
     let res = nlp.analyze(data, text);
     console.log( res );
 
-    grammar.defineRule("<PRN>?<verb><noun>");
+    grammar.defineRule("<PRN>?<verb><PP>");
     let msg = ! grammar.test(res) ? " DOES NOT " : "";
-    console.log("'"+text+"'" + msg + " matches the rule " + grammar.rule);
+    console.log("'"+text+"'" + msg + " match(es) the rule " + grammar.rule);
     
     grammar.defineRule("<SUB><Smthg>?<noun>");
     msg = ! grammar.test(res) ? " DOES NOT " : "";

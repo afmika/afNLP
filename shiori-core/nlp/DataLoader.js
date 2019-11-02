@@ -11,7 +11,6 @@ module.exports = class DataLoader {
         this.path = path || default_path;    
         this.data = {};
         this.dbfiles = {
-            // it will run faster this way
             "prepositions" : "prepositions",
             "pronoun.demonstrative" : "pronoun.demonstrative",
             "pronoun.indefinite" : "pronoun.indefinite",
@@ -72,6 +71,7 @@ module.exports = class DataLoader {
         }
         return res;
     }
+	
     getData() {
         return this.data;    
     }
