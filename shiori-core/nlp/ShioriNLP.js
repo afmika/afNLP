@@ -72,10 +72,21 @@ class ShioriNLP {
         for(let categ in word_data) {
             tokens.forEach(token => {
                 for(let i = 0; i < word_data[categ].length; i++) {
+                    if(word_data[categ][i] == '') break;
                     let sample = word_data[categ][i].toLowerCase();
-                    if(sample == token) {
-                        result[token] = categ;
-                        break;
+                    if(sample.startsWith("EXP ")) {
+                        // sample is expressed as a RegExp
+                        sample = sample.split("EXP ").join("");
+                        console.log("REGEXP ", sample);
+                        if(new RegExp(sample, "gi").test(token)) {
+                            result[token] = categ;
+                            break;
+                        }
+                    } else {
+                        if(sample == token) {
+                            result[token] = categ;
+                            break;
+                        }
                     }
                 }
                 if(result[token] == undefined) {

@@ -26,7 +26,7 @@ donnera
 {
     "i" : "pronoun",
     "am": "verb",
-    "adj": "clever"
+    "smart": "adj"
 }
 
 - Grammar.js

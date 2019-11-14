@@ -38,7 +38,6 @@ class Grammar {
         let alias_count = 0;
         for(let key in this.alias) {
             // reduce the matching probability
-            // for example if the key is 'SUB' and there is also
             let fix = "[|()]?";
             let rg = new RegExp(fix+key+fix, "g");
             if(_rule.match(rg) != null) {
