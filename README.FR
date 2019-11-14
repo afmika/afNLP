@@ -34,7 +34,7 @@ donnera
 Grammar.js est une classe qui permet de formaliser une regle grammaticale 
 via les expressions regulieres et de faire des operations sur ces regles.
 Grammar.js se base sur la notion d'alias et supporte les definitions recursives
-par exemple si A refere B et que C refere A donc C referera A
+par exemple si A refere B et que C refere A donc C referera B
 
 
 Par exemple une phrase simple peut etre formalisee via le motif
