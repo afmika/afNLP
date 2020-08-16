@@ -11,7 +11,7 @@ let nlp = new ShioriNLP();
 let db = new DataLoader();
 
 let grammar = new Grammar();
-grammar.defineAlias({
+grammar.defineAliases({
     "PRN" : [
         "pronoun.demonstrative",
         "pronoun.indefinite",
@@ -27,13 +27,13 @@ grammar.defineAlias({
     ],
     "PP" : "prepositions",//
 
-    // recurs. def. works too
+    // recursive defintion works too
     "SUB" : ["PRN", "PP"],
     "Smthg" : ["SUB", "verb"]
 });
 
 db.load(function(data) {
-    let text = `I do not want to eat burger`;
+    let text = `I want to eat burger`;
     let res = nlp.analyze(data, text);
     console.log( res );
 

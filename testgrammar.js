@@ -15,7 +15,7 @@ let word_data = {
     'noun' : ['michael', 'apple']
 };
 
-grammar.defineAlias({
+grammar.defineAliases({
     "subject" : "pronoun",
     "object" : ["adj", "noun"],
     "V": "verb",

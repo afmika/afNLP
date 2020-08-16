@@ -5,28 +5,46 @@
 
 module.exports = 
 class Grammar {
+
+    /**
+     * Instanciates a new Grammar object with the specified rule
+     * @param {string} rule 
+     */
     constructor(rule) {
         this.rule = rule || "";
         this.alias = {};
     }
+
+    /**
+     * Specifies a new grammar rule expressed as a regular expression
+     * ex: <noun>?<verb>{1}<X>?
+     * @param {string} rule 
+     */
     defineRule(rule) {
-        // X means anything ;)
-        // ex: <noun>?<verb>{1}<X>?
         this.rule = rule;
         this.tmp =true;
     }
 
-    defineAlias(obj) {
+    /**
+     * Defines aliases from a map object
+     * @param {JSON} obj string map 
+     */
+    defineAliases(obj) {
         for(let i in obj) {
             this.setAlias(i, obj[i]);
         }
     }
 
+    /**
+     * Defines an alias for a single item or an array of item
+     * @param {string} key 
+     * @param {string|string[]} item
+     */
     setAlias(key, item) {
         if(this.alias[key] == undefined) {
             this.alias[key] = [];
         }
-        if(typeof(item) == "string") {
+        if(typeof(item) == 'string' ) {
             this.alias[key].push(item);            
         } else {
             // array
@@ -34,33 +52,41 @@ class Grammar {
         }
     }
 
-    containsAlias(_rule) {
-        let alias_count = 0;
+    /**
+     * @param {string} _alias 
+     * @returns true if this object contains the specified alias
+     */
+    containsAlias( _alias ) {
         for(let key in this.alias) {
             // reduce the matching probability
             let fix = "[|()]?";
             let rg = new RegExp(fix+key+fix, "g");
-            if(_rule.match(rg) != null) {
-                alias_count++;
+            if(_alias.match(rg) != null) {
+                return true;
             }
         }
-        return alias_count > 0;
+        return false;
     }
+
+    /**
+     * @param {string} rule 
+     */
     adjustRule(rule) {
-        //console.log(rule);
         for(let key in this.alias) {
             let tab = this.alias[key];
-            let vals = "(" + tab.join("|") + ")";
-            rule = rule.replace(new RegExp(key, "g"), vals);
+            let values = `( ${ tab.join('|') } )`;
+            rule = rule.replace(new RegExp(key, "g"), values);
         }
-
-        // recurs
+        // search recursively
         if( this.containsAlias(rule) ) {
             rule = this.adjustRule(rule);
         }
-        
         return rule;
     }
+    
+    /**
+     * @param {JSON} analyzed_word 
+     */
     test(analyzed_word) {
         if(this.rule == "" || this.rule == undefined) {
             throw "Grammar.rule must be defined!";
@@ -71,7 +97,7 @@ class Grammar {
         // ex : I am Michael => <noun><verb><noun>        
         let ph = "";
         for(let word in analyzed_word) {
-            ph += "<"+analyzed_word[word]+">";
+            ph += `<${analyzed_word[word]}>`;
         }
         //console.log(ph, "rule", tmp);
         return ph.match(rule_reg) != null;

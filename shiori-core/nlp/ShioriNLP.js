@@ -16,6 +16,10 @@ class ShioriNLP {
     save(path){}
     ////////
 
+    /**
+     * @param {string} language 
+     * @param {string} group
+     */
     addGroup(language, group) {
         if(this.map[language] == undefined) {
             this.map[language] = {};
@@ -24,20 +28,37 @@ class ShioriNLP {
             this.map[language][group] = {"input" : [], "output": [] };
         }
     }
+
+    /**
+     * @param {string} path 
+     * @param {string} type 
+     * @param {string} value 
+     */
     add(path, type, value) {
         path = path.split("/");
         let [language, group] = path;
         this.addGroup(language, group);
         this.map[language][group][type].push(value);
     }
+
+    /**
+     * @param {string} path 
+     * @param {string} input 
+     */
     addInput(path, input) {
         this.add(path, "input", input);
     }
 
+    /**
+     * @param {string} path 
+     * @param {string} output 
+     */
     addOutput(path, output) {
         this.add(path, "output", output);      
     }
-
+    /**
+     * @param {string} output 
+     */
     guessResponse(output) {
         let _class = this.classify(output, false);
         let ref = this.explore(_class.getPath() + "/output"); 
@@ -45,10 +66,16 @@ class ShioriNLP {
         return ref[index];
     }
 
+    /**
+     * @returns {JSON} This object's map
+     */
     getMap() {
         return this.map;
     }
 
+    /**
+     * @param {JSON} path 
+     */
     explore(path) {
         path = path.split("/");
         let [language, group, type] = path;
@@ -64,6 +91,11 @@ class ShioriNLP {
         return this.map[language][group];
     }
     
+    /**
+     * @param {JSON} word_data 
+     * @param {string} text
+     * @returns {JSON} Tokens with descriptions
+     */
     analyze(word_data, text) {
         // word_data {categ: [.... words]}
         text = text.toLowerCase();
@@ -97,10 +129,13 @@ class ShioriNLP {
         return result;
     }
 
-    // classify the usertext in a strict manner
+    /**
+     * Classify the usertext in a strict manner
+     * @param {string} usertext 
+     * @param {boolean} case_sensitive 
+     */
     getGroupOf(usertext, case_sensitive) {
-        if(case_sensitive) {
-        } else {
+        if( !case_sensitive ) {
             usertext = usertext.toLowerCase();
         }
         let found = null;
@@ -118,14 +153,16 @@ class ShioriNLP {
         return found;
     }
 
-    // same as getgroupof
-    // 'tries' to classify the usertext instead
+    /**
+     * Same as getGroupOf
+     * But 'tries' to classify the usertext instead
+     * @param {string} usertext 
+     * @param {boolean} case_sensitive 
+     */
     classify(usertext, case_sensitive) {
-        if(case_sensitive) {
-        } else {
+        if( !case_sensitive ) {
             usertext = usertext.toLowerCase();
         }
-        let found = null;
         let group_dist_hash = {};
         for(let lang in this.map) {
             for(let group in this.map[lang]) {

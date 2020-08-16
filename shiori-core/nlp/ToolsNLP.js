@@ -5,10 +5,20 @@
 
 module.exports = 
 class ToolsNLP {
+    
+    /**
+     * @param {string} text
+     * @returns {string} The trimmed text
+     */
     static trim(text) {
         // removes extra spaces
         return text.replace(/[\s\t]+/gi, " ");
     }
+
+    /**
+     * @param {string} text
+     * @returns {string[]} An array of tokens
+     */
     static tokenize(text) {
         let tokens = [];
         text = this.trim(text);
@@ -33,6 +43,11 @@ class ToolsNLP {
         return tokens.filter(item => item != '');
     }
 
+    /**
+     * @param {string} a 
+     * @param {string} b 
+     * @returns {number} The levenshtein distance of (a, b)
+     */
     static lenvenshtein(a, b) {
         let u = a.length,
             v = b.length;
